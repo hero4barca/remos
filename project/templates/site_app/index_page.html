@@ -1,11 +1,63 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Page</title>
+    <title>Photo Grid with Tailwind CSS</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css"> <!-- We add the output Tailwind CSS here -->
 </head>
-<body>
-    <h1>This is index</h1>
+<body class="h-screen flex justify-center items-center">
+
+<div class="w-3/5 m-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow shadow-lg" src="https://picsum.photos/seed/1/300/200" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/2/300/400" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/3/300/300" alt="">
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/4/300/300" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/5/300/300" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/6/300/300" alt="">
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/7/300/400" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/8/300/300" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/9/300/200" alt="">
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/10/300/100" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/11/300/400" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg shadow" src="https://picsum.photos/seed/12/300/400" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
