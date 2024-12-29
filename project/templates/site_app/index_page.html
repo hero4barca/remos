@@ -26,21 +26,26 @@
             <a href="#about" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[18px] font-light leading-normal hover:text-blue-500 transition">About</a>
             <a href="#news" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[18px] font-light leading-normal hover:text-blue-500 transition">News</a>
             <a href="#contact" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[18px] font-light leading-normal hover:text-blue-500 transition">Contact</a>
-            <a href="#products" class="text-blue-500  px-12 py-1 rounded-full hover:text-blue-500 transition products-nav-item">
+            <a href="#products" class="text-blue-500  px-12 py-1 rounded-full hover:text-blue-500 transition products-nav-item button-box-shadow">
                 Products
             </a>
         </nav>
     </div>
 
   <!-- Hero Section -->
-  <section class="relative h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center" style="background-image: url('{% static "img/hero-image.png" %}');">
-    <div>
-      <h1 class="text-4xl font-semibold mb-6 shadow-md">The link between earth and space.</h1>
-      <a href="#enquiry" class="bg-white/80 text-blue-500 font-bold px-6 py-2 rounded-full hover:bg-blue-500 hover:text-white transition">
-        Make enquiry
-      </a>
-    </div>
-  </section>
+
+  <section class="relative bg-cover bg-center text-white text-center"
+         style="background-image: url('{% static "img/hero-image.png" %}'); background-size: cover; background-repeat: no-repeat; aspect-ratio: 16 / 9;">
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <h1 class="text-white text-center font-serif text-[64px] font-normal leading-normal">
+      The link between earth and space
+    </h1>
+  </div>
+  <a href="#enquiry"
+     class="absolute bottom-10 mb-5 right-12 mr-7 bg-white text-blue-500 font-normal px-6 py-2 rounded-full button-box-shadow">
+    Make enquiry
+  </a>
+</section>
 
   <!-- Other Sections -->
   <section id="about" class="py-20 px-6 bg-gray-100">
