@@ -57,9 +57,9 @@
 
       <!-- Images -->
       <img src="{% static 'img/satellite.png' %}" alt="Satellite"
-           class="absolute w-[260px] h-[300px] left-0 top-[230px] rounded-[96px]" />
+           class="absolute w-[270px] h-[320px] left-0 top-[230px] rounded-[96px]" />
       <img src="{% static 'img/dish.png' %}" alt="Dish Antenna"
-           class="absolute w-[278px] h-[372px] left-[379px] top-0 rounded-[112px]"/>
+           class="absolute w-[278px] h-[372px] left-[400px] top-0 rounded-[112px]"/>
 
       <!-- Content Card -->
       <div class="relative flex flex-col items-center justify-start gap-4 mt-16 ">
@@ -74,18 +74,78 @@
         </div>
       </div>
     </div>
-
   </div>
-
 </section>
 
-<!-- Other Sections -->
 <section class="bg-[#0C0F22] items-center justify-center py-8">
   <div class="text-white text-center font-serif text-[40px] font-normal leading-normal">
     <p>Effortless Ground Control for Boundless Exploration.</p>
   </div>
-
 </section>
+
+<section class="bg-white py-12 px-6">
+  <!-- Product Overview -->
+  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mb-16">
+    <!-- Text Content -->
+    <div class="lg:w-1/2 lg:h-[256px] bg-white rounded-[81px] mix-blend-multiply button-box-shadow p-6">
+      <p class="text-lg text-gray-700 mb-4 mt-8">
+        The Expedite product range offers a cutting-edge suite of tools for satellite ground operations, combining automation, scalability, and versatility.
+      </p>
+      <a href="#"
+        class="text-blue-500 text-lg font-medium hover:underline inline-block">
+        Go to product page &gt;
+      </a>
+    </div>
+    <!-- Image Section -->
+    <div class="lg:w-1/2 relative ">
+      <img src="{% static 'img/router.png' %}" alt="Expedite product" class="rounded-lg ">
+      <!-- Decorative Circles -->
+      <div class="absolute inset-0 flex items-center justify-center -z-10">
+        <div class="w-[300px] h-[300px] border border-blue-500 rounded-full"></div>
+        <div class="w-[200px] h-[200px] border border-blue-500 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Us Section -->
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-10">Why Us?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="p-6 border rounded-lg text-center">
+        <h3 class="text-lg font-semibold mb-2">Fully encompassing solution</h3>
+        <p class="text-gray-600">Our integrated suite of software simplifies satellite operations, offering everything you need in one place.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="p-6 border rounded-lg text-center">
+        <h3 class="text-lg font-semibold mb-2">Seamless integration</h3>
+        <p class="text-gray-600">With a REST API for control and a Streaming API for data, our software seamlessly integrates with your existing systems.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="p-6 border rounded-lg text-center">
+        <h3 class="text-lg font-semibold mb-2">Intuitive</h3>
+        <p class="text-gray-600">Designed with a low learning curve, our products are easy to use and master, ensuring efficient operations.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="p-6 border rounded-lg text-center">
+        <h3 class="text-lg font-semibold mb-2">Satellite Compatibility</h3>
+        <p class="text-gray-600">Compatible with various satellites, our software ensures flexibility without vendor lock-in.</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="p-6 border rounded-lg text-center">
+        <h3 class="text-lg font-semibold mb-2">Flexible Licensing</h3>
+        <p class="text-gray-600">Choose from term-based or perpetual licensing based on your needs.</p>
+      </div>
+      <!-- Card 6 -->
+      <div class="p-6 border rounded-lg text-center">
+        <h3 class="text-lg font-semibold mb-2">Customer Support</h3>
+        <p class="text-gray-600">Our team is always available to provide technical support to our valued customers when needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="about" class="py-20 px-6 bg-gray-100 ">
   <div class="container mx-auto text-center">
     <h2 class="text-2xl font-semibold mb-6">About Us</h2>
