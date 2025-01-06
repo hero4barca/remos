@@ -85,35 +85,43 @@
 
 <section class="bg-white py-12 px-6">
   <!-- Product Overview -->
-  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-1 mb-16">
+  <div class="max-w-5xl  mx-auto h-[100%] flex flex-col lg:flex-row items-start gap-8 mb-16">
     <!-- Text Content -->
-    <div class="lg:w-1/2 lg:h-[256px] bg-white rounded-[81px] mix-blend-multiply button-box-shadow p-6">
-      <p class="text-lg text-gray-700 mb-4 mt-8">
+    <div class="lg:w-1/2 bg-white rounded-[81px] mix-blend-multiply button-box-shadow my-auto p-6 ">
+      <div class="text-black font-sans text-[18px] font-light leading-normal mb-4 mt-8 mr-5">
         The Expedite product range offers a cutting-edge suite of tools for satellite ground operations, combining automation, scalability, and versatility.
-      </p>
-      <a href="#"
-        class="text-blue-500 text-lg font-medium hover:underline inline-block">
-        Go to product page &gt;
-      </a>
-    </div>
-    <!-- Image Section -->
-    <div class="lg:w-1/2 relative flex justify-center items-center p-10 overflow-hidden border border-gray-300 rounded-lg">
-      <!-- Larger Ellipse (Background) -->
-      <div class="absolute bg-[#0C0F22] w-[288px] h-[288px] rounded-full z-0 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
+      </div>
 
-      <!-- White Small Ellipse -->
-      <div class="absolute top-[30px] bg-white w-[15px] h-[15px] rounded-full z-10"></div>
+      <div class=" text-right pt-5 w-[95%]">
+        <a href="#" class="text-blue-500 text-lg font-medium  inline-block ">
+          Go to product page &gt;
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Image Section -->
+    <div class="lg:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px] ">
+      <!-- <div class="relative items-center w-full h-max">   </div> -->
+        <!-- Larger Ellipse (Background) -->
+        <div class="absolute bg-[#0C0F22] w-[285px] h-[284px] rounded-full top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
+
+        <!-- White Small Ellipse -->
+        <div class="absolute top-[21%] right-[46%] bg-white w-[15px] h-[15px] rounded-full z-10"></div>
+
+        <!-- Decorative Rounded Rectangles -->
+        <div class="absolute w-[127px] h-[268px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[40%] left-[38%] z-5"></div>
+        <div class="absolute w-[76px] h-[300px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[20%] left-[30%] z-5"></div>
+        <div class="absolute w-[96px] h-[325px] border-2 border-[#2BA9F0] rounded-[72px] top-[20%] right-[28%] z-5"></div>
+
+
 
       <!-- Product Image -->
       <img src="{% static 'img/router.png' %}" alt="Expedite product" class="relative w-[392px] h-auto z-20 rounded-lg">
 
-      <!-- Decorative Rounded Rectangles -->
-      <div class="absolute w-[127px] h-[293px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[40%] left-[38%] z-5"></div>
-      <div class="absolute w-[84px] h-[336px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[5%] left-[25%] z-5"></div>
-      <div class="absolute w-[96px] h-[325px] border-2 border-[#2BA9F0] rounded-[72px] top-[15%] right-[28%] z-5"></div>
     </div>
-
   </div>
+
 
   <!-- Why Us Section -->
   <div class="max-w-6xl mx-auto">
