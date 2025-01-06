@@ -5,7 +5,11 @@ module.exports = {
     './project/templates/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        serif: ['"Source Serif Pro"', 'serif'], // Adds the font to the serif stack
+      },
+    },
   },
   plugins: [],
 }

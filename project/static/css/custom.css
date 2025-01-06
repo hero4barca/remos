@@ -9,9 +9,13 @@
                background-blend-mode: multiply;
 }
 
-.button-box-shadow{
+.light-box-shadow{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
                            0px 4px 4px 0px #2BA9F0,
                            6px -3px 4px 0px rgba(181, 224, 249, 0.34);
 
+}
+
+.dark-box-shadow{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px #2BA9F0, 6px -3px 4px 0px rgba(0, 0, 0, 0.79);
 }
