@@ -313,48 +313,72 @@
 
 <!-- Customer installations -->
 <section class="bg-white py-16">
-  <div class="max-w-7xl mx-auto px-6">
+  <div class="max-w-7xl mx-auto px-6 relative">
     <!-- Section Title -->
     <h2 class="text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
 
-    <!-- Grid of Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- Card 1 -->
-      <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-        <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-        <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-        <p class="text-gray-500 text-sm">
-          Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-        </p>
+      <!-- Swiper carousel -->
+      <div class="swiper-customer-installations">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+              <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+              <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+              <p class="text-gray-500 text-sm">
+                Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+              <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+              <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+              <p class="text-gray-500 text-sm">
+                Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+              <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+              <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+              <p class="text-gray-500 text-sm">
+                Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="swiper-slide">
+            <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+              <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+              <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+              <p class="text-gray-500 text-sm">
+                Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="swiper-slide">
+            <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+              <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+              <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+              <p class="text-gray-500 text-sm">
+                Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-        <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-        <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-        <p class="text-gray-500 text-sm">
-          Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-        <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-        <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-        <p class="text-gray-500 text-sm">
-          Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-        </p>
-      </div>
-
-      <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-        <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-        <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-        <p class="text-gray-500 text-sm">
-          Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-        </p>
-      </div>
-
-    </div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
   </div>
 </section>
 
@@ -378,6 +402,8 @@
 </body>
 {% block page-based-js %}
 <script>
+
+  // customers logos slider
   document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
       loop: true,
@@ -391,6 +417,29 @@
         640: { slidesPerView: 2 }, // For screens >= 640px
         768: { slidesPerView: 3 }, // For screens >= 768px
         1024: { slidesPerView: 5 }, // For screens >= 1024px
+      },
+    });
+  });
+
+  // customer installations slider
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-customer-installations', {
+      slidesPerView: 1.2, // Show 1.2 slides on small screens
+      spaceBetween: 16, // Gap between slides
+      breakpoints: {
+        640: {
+          slidesPerView: 2, // Show 2 slides on medium screens
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 3.5, // Show 3.5 slides on large screens
+          spaceBetween: 24,
+        },
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
   });
