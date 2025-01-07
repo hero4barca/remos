@@ -312,14 +312,14 @@
 </section>
 
 <!-- Customer installations -->
-<section class="bg-white py-16">
-  <div class="max-w-7xl mx-auto px-6 relative">
+<section class="bg-white py-16 mx-3">
+  <div class="lg:w-[95%] min-h-fit mx-auto px-6 relative ">
     <!-- Section Title -->
-    <h2 class="text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
+    <h2 class=" text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
 
       <!-- Swiper carousel -->
-      <div class="swiper-customer-installations">
-        <div class="swiper-wrapper">
+      <div class="swiper-customer-installations w-full max-w-full overflow-x-hidden py-4">
+        <div class="swiper-wrapper w-full">
           <!-- Card 1 -->
           <div class="swiper-slide">
             <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
@@ -426,6 +426,8 @@
     const swiper = new Swiper('.swiper-customer-installations', {
       slidesPerView: 1.2, // Show 1.2 slides on small screens
       spaceBetween: 16, // Gap between slides
+      initialSlide: 1, // Set initial slide index (adjust as needed)
+      // centeredSlides: true,
       breakpoints: {
         640: {
           slidesPerView: 2, // Show 2 slides on medium screens
