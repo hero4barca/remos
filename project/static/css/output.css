@@ -1092,6 +1092,14 @@ video {
   gap: 18px;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .self-stretch {
   align-self: stretch;
 }
@@ -1144,6 +1152,26 @@ video {
   border-radius: 35%;
 }
 
+.rounded-\[25\%\] {
+  border-radius: 25%;
+}
+
+.rounded-\[20\%\] {
+  border-radius: 20%;
+}
+
+.rounded-\[15\%\] {
+  border-radius: 15%;
+}
+
+.rounded-\[18\%\] {
+  border-radius: 18%;
+}
+
+.rounded-\[17\%\] {
+  border-radius: 17%;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1168,6 +1196,11 @@ video {
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.border-blue-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0C0F22\] {
@@ -1235,6 +1268,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .px-1 {
@@ -1415,6 +1452,10 @@ video {
   font-size: 25px;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1487,6 +1528,21 @@ video {
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1497,6 +1553,12 @@ video {
 
 .mix-blend-multiply {
   mix-blend-mode: multiply;
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .grayscale {
@@ -1533,6 +1595,12 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
@@ -1576,6 +1644,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
