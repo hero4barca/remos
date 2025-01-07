@@ -19,3 +19,134 @@
 .dark-box-shadow{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px #2BA9F0, 6px -3px 4px 0px rgba(0, 0, 0, 0.79);
 }
+
+/** Map css */
+
+.map-area {
+    margin: 0;
+    background: #fff ;
+}
+.map-area * {
+    box-sizing: border-box;
+}
+
+/* .map-area .world-map{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+} */
+
+.map-area .world-map img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.map-area .pin{
+    background: #2BA9F0;
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+}
+
+.map-area .pin::before{
+    content: '';
+    background: #2BA9F0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation:
+        pulse 1.3s ease-in-out infinite;
+
+}
+
+.map-area .pin span{
+    display: inline-block;
+    white-space: nowrap ;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+    background: #fff;
+    color:#0C0F22;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+                0px 4px 4px 0px #2BA9F0,
+                6px -3px 4px 0px rgba(181, 224, 249, 0.34);
+}
+
+.map-area .mexico{
+    top: 57%;
+    left: 18%;
+}
+
+.map-area .germany {
+    top: 44%;
+    left: 49%;
+}
+.map-area .spain {
+    top: 51%;
+    left: 46%;
+}
+
+.map-area .canary-island{
+    top: 56%;
+    left: 43%;
+}
+
+
+.map-area .sweden{
+    top: 33%;
+    left: 52%;
+}
+
+.map-area .south-africa{
+    top: 78%;
+    left: 53%;
+}
+.map-area .ecuador{
+    top: 69%;
+    left: 25%;
+}
+
+.map-area .south-korea{
+    top: 53%;
+    left: 81%;
+}
+
+.map-area .australia{
+    top: 76%;
+    left: 82%;
+}
+
+.map-area .united-states{
+    top: 47%;
+    left: 14%;
+}
+
+
+
+@keyframes pulse{
+    100%{
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(2.5);
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .map-area .world-map{
+        font-size: 13px;
+    }
+}
