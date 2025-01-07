@@ -10,7 +10,8 @@
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css"> <!--  Tailwind CSS here -->
   <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-
+  <link rel="stylesheet" href="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.css' %}">
+  <script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
 </head>
 <body class="font-sans">
   <!-- Floating Navbar -->
@@ -49,7 +50,7 @@
 </section>
 
 <section class="relative  px-[100px] py-[35px]">
-  <div class=" relative flex flex-col px-[300px] items-center justify-center min-h-max pb-16">
+  <div class=" relative flex flex-col px-auto items-center justify-center min-h-max pb-16">
 
     <div class="relative w-[657px] flex-grow lg:min-h-[550px] pb-2 "> <!-- Add padding-bottom here -->
       <!-- Decorative Ellipses left-[225px] top-[1px]  -->
@@ -179,7 +180,7 @@
       <div class="flex items-start gap-12 p-8 pl-14 bg-[#0c0f22] rounded-[75px] bg-opacity-80 bg-blend-darken dark-box-shadow">
         <!-- Image -->
         <div class="relative flex-shrink-0">
-          <img src="{% static 'img/testimonial/mattias.png' %}" alt="Matias Campos" class="w-[160px] h-[130px]  rounded-[48px] object-cover">
+          <img src="{% static 'img/testi-images/mattias.png' %}" alt="Matias Campos" class="w-[160px] h-[130px]  rounded-[48px] object-cover">
           <!-- Quotation Icon -->
           <div class="absolute -top-4 left-9  rounded-full flex items-center justify-center text-blue-500 text-8xl font-serif font-bold">
             &ldquo;
@@ -199,7 +200,7 @@
       <div class="flex items-start gap-12 p-8 pl-14 bg-[#0c0f22] rounded-[75px] bg-opacity-80 bg-blend-darken dark-box-shadow">
         <!-- Image -->
         <div class="relative flex-shrink-0">
-          <img src="{% static 'img/testimonial/julian.png' %}" alt="Julian Fernandez" class="w-[160px] h-[130px] rounded-[48px] object-cover">
+          <img src="{% static 'img/testi-images/julian.png' %}" alt="Julian Fernandez" class="w-[160px] h-[130px] rounded-[48px] object-cover">
           <!-- Quotation Icon -->
           <div class="absolute -top-4 left-9  rounded-full flex items-center justify-center text-blue-500 text-8xl font-serif font-bold">
             &ldquo;
@@ -218,7 +219,38 @@
   </div>
 </section>
 
+<!-- Map Section -->
+<section id="map-section" class="bg-white pt-8 pb-4">
+  <div class="bg-white py-2">
+    <div class="swiper-container max-w-full mx-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/ast.png' %}" alt="Australintu logo" class="max-h-24 object-contain">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/contec.png' %}" alt="Contec Logo" class="max-h-24 object-contain">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/fossa.png' %}" alt="Fossa Systems Logo" class="max-h-24 object-contain">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/gac.png' %}" alt="DLR GAC Logo" class="max-h-24 object-contain">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/inta.png' %}" alt="INTA Logo" class="max-h-24 object-contain">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/ltu.png' %}" alt="LTU Logo" class="max-h-24 object-contain">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="{% static 'img/cus-logos/szg.png' %}" alt="Space Zero Gravity Logo" class="max-h-24 object-contain">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+</section>
 <section id="about" class="py-20 px-6 bg-gray-100 ">
   <div class="container mx-auto text-center">
     <h2 class="text-2xl font-semibold mb-6">About Us</h2>
@@ -234,4 +266,24 @@
 </section>
 
 </body>
+{% block page-based-js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      speed: 4000, // Control how fast the slider flows
+      breakpoints: {
+        640: { slidesPerView: 2 }, // For screens >= 640px
+        768: { slidesPerView: 3 }, // For screens >= 768px
+        1024: { slidesPerView: 5 }, // For screens >= 1024px
+      },
+    });
+  });
+</script>
+{% endblock %}
 </html>
