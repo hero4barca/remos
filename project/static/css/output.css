@@ -1399,6 +1399,14 @@ video {
   padding-top: 2rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1666,6 +1674,10 @@ video {
 
   .lg\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .lg\:w-\[96\%\] {
+    width: 96%;
   }
 
   .lg\:flex-shrink-0 {
