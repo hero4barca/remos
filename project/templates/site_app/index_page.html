@@ -388,7 +388,7 @@
     <!-- News Section -->
     <div class="mb-16">
       <h2 class="text-white text-4xl  mb-4 font-serif">News</h2>
-      <p class="text-gray-400 mb-8">
+      <p class="text-white mb-8">
         Read about our latest happenings and learn new insights through our Podcast.
       </p>
 
@@ -465,24 +465,27 @@
     <!-- Top Row -->
     <div class="flex flex-col lg:flex-row justify-between items-start border-b border-[#2BA9F0] pb-6 mb-6 gap-8">
       <!-- Left Section -->
-      <div class="flex flex-col gap-6">
+      <div class="flex gap-6">
         <!-- Contact Section -->
-        <div>
+        <div class="flex flex-col min-w-fit">
           <h2 class="text-6xl font-serif font-light mb-4">Contact</h2>
           <p class="mb-1">Telephone: +46 703 497 011</p>
           <p class="mb-4">Email: info@remospace.com</p>
         </div>
 
         <!-- Follow Us Section -->
-        <div class="flex items-center gap-4">
-          <span class="text-sm text-white">Follow us:</span>
-          <!-- Social Media Icons -->
-          <a href="#" class="hover:text-blue-500">
-            <img src="{% static 'img/icons/linkedin.png' %}" alt="LinkedIn" class="w-6 h-6">
-          </a>
-          <a href="#" class="hover:text-blue-500">
-            <img src="{% static 'img/icons/mailchimp.png' %}" alt="Custom Icon" class="w-6 h-6">
-          </a>
+        <div class="flex flex-col min-w-fit mt-5">
+          <h2 class="text-xl font-serif font-light mb-4">Follow Us</h2>
+          <div class="flex items-center gap-4">
+
+            <!-- Social Media Icons -->
+            <a href="#" class="hover:text-blue-500">
+              <img src="{% static 'img/icons/linkedin.png' %}" alt="LinkedIn" class="w-9 h-9">
+            </a>
+            <a href="#" class="hover:text-blue-500">
+              <img src="{% static 'img/icons/mailchimp.png' %}" alt="Custom Icon" class="w-9 h-9">
+            </a>
+          </div>
         </div>
       </div>
 
