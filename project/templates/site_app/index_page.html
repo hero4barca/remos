@@ -313,9 +313,9 @@
 
 <!-- Customer installations -->
 <section class="bg-white py-16 mx-3">
-  <div class="lg:w-[96%] min-h-fit mx-auto px-6 relative ">
+  <div class="lg:w-[90%] min-h-fit mx-auto px-6 relative ">
     <!-- Section Title -->
-    <h2 class=" text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
+    <h2 class="text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
 
       <!-- Swiper carousel -->
       <div class="swiper-customer-installations w-full max-w-full overflow-x-hidden py-3">
@@ -382,22 +382,138 @@
   </div>
 </section>
 
+<!-- Blog section -->
+<section  class="bg-[#0C0F22] py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- News Section -->
+    <div class="mb-16">
+      <h2 class="text-white text-4xl  mb-4 font-serif">News</h2>
+      <p class="text-gray-400 mb-8">
+        Read about our latest happenings and learn new insights through our Podcast.
+      </p>
+
+      <!-- News Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-0">
+        <!-- Card 1 -->
+        <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
+          <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+          <p class="text-white mt-auto">
+            Join us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+      </div>
+
+        <!-- Card 2 -->
+        <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
+          <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+          <p class="text-white mt-auto">
+            Visit us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+      </div>
+
+        <!-- Card 3 -->
+        <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
+          <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+          <p class="text-white mt-auto">
+            Learn more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+      </div>
+
+        <!-- Card 4 -->
+        <div class="p-9  flex flex-col">
+          <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+          <p class="text-white mt-auto">
+            Discover more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+      </div>
+      </div>
 
 
-</section>
-<section id="about" class="py-20 px-6 bg-gray-100 ">
-  <div class="container mx-auto text-center">
-    <h2 class="text-2xl font-semibold mb-6">About Us</h2>
-    <p class="text-gray-700">This section contains information about us.</p>
+      <!-- More Articles -->
+      <div class="mt-8">
+        <a href="#" class="text-blue-400 hover:underline">
+          More articles >
+        </a>
+      </div>
+    </div>
+
+    <!-- Podcast Section -->
+    <div class="flex flex-col lg:flex-row items-center justify-between  w-[70%]">
+      <!-- Podcast Info -->
+      <div class="bg-[#0C0F22] dark-box-shadow rounded-[15%] p-6 flex-1 max-w-[45%] ">
+        <h3 class="text-white text-4xl font-serif mb-4">Podcast</h3>
+        <p class="text-white mb-4">
+          Listen to our podcast - <span class="font-bold">Space to Ground.</span>
+        </p>
+        <p class="text-white mb-6">
+          This podcast is meant to drive more <span class="font-bold">awareness</span>, explore the <span class="font-bold">latest technologies</span>,
+          and <span class="font-bold">help the industry navigate collaborative opportunities</span>.
+        </p>
+        <a href="#" class="text-blue-400 hover:underline">
+          Browse episodes >
+        </a>
+      </div>
+      <!-- Podcast Logo -->
+      <div class="flex-shrink-0 ">
+        <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-64 h-auto lg:min-w-[368px]">
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="news" class="py-20 px-6">
-  <div class="container mx-auto text-center">
-    <h2 class="text-2xl font-semibold mb-6">Latest News</h2>
-    <p class="text-gray-700">Stay updated with the latest news from us.</p>
+<footer class="bg-[#0C0F22] py-8 text-white border-t border-[#2BA9F0]">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Top Row -->
+    <div class="flex flex-col lg:flex-row justify-between items-start border-b border-[#2BA9F0] pb-6 mb-6 gap-8">
+      <!-- Left Section -->
+      <div class="flex flex-col gap-6">
+        <!-- Contact Section -->
+        <div>
+          <h2 class="text-6xl font-serif font-light mb-4">Contact</h2>
+          <p class="mb-1">Telephone: +46 703 497 011</p>
+          <p class="mb-4">Email: info@remospace.com</p>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="flex items-center gap-4">
+          <span class="text-sm text-white">Follow us:</span>
+          <!-- Social Media Icons -->
+          <a href="#" class="hover:text-blue-500">
+            <img src="{% static 'img/icons/linkedin.png' %}" alt="LinkedIn" class="w-6 h-6">
+          </a>
+          <a href="#" class="hover:text-blue-500">
+            <img src="{% static 'img/icons/mailchimp.png' %}" alt="Custom Icon" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="flex flex-col items-start text-left">
+        <img src="{% static 'img/logo-white.png' %}" alt="Remos Logo" class="mb-4 lg:w-[140px] h-auto">
+        <p class="text-sm text-white font-light">
+          <span class="font-semibold">Simplifying Satellite Ground Operations.</span><br>
+          Welcome to the next generation <br /> of space communications.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Bottom Row -->
+    <div class="flex flex-col lg:flex-row justify-between items-center">
+      <!-- Company Address -->
+      <div class="text-sm text-white font-light ml-4">
+        <p class="font-bold">Company Address</p>
+        <p>Remos Space Systems AB</p>
+        <p>Aurorum 1 C, SE-977 75 Luleå, Sweden</p>
+      </div>
+
+      <!-- EU Logo -->
+      <div class="mt-6 lg:mt-0 lg:mr-14">
+        <img src="{% static 'img/cass_eu.png' %}" alt="Cassini Accelerator Logo" class=" lg:w-48 h-auto">
+      </div>
+    </div>
   </div>
-</section>
+</footer>
+
 
 </body>
 {% block page-based-js %}
@@ -412,7 +528,7 @@
         delay: 0,
         disableOnInteraction: false,
       },
-      speed: 4000, // Control how fast the slider flows
+      speed: 7000, // Control how fast the slider flows
       breakpoints: {
         640: { slidesPerView: 2 }, // For screens >= 640px
         768: { slidesPerView: 3 }, // For screens >= 768px
