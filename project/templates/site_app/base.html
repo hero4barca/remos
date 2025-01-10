@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {% block title %}
+        RemosSpace AB
+    {% endblock %}
+  </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css"> <!--  Tailwind CSS here -->
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+  {% block page_based_head_includes %}
+
+  {% endblock %}
+</head>
+<body class="font-sans">
+
+  <!-- Floating Navbar -->
+  <div class="absolute top-5 left-1/2 transform -translate-x-1/2 lg:w-[80%] lg:flex-shrink-0 flex items-center justify-between h-[66px] bg-white backdrop-blur-md px-8 py-3 rounded-full nav-shadow z-10">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+          <img src="{% static 'img/logo.png' %}" alt="Remos Logo" class="h-10" />
+      </div>
+
+      <!-- Navigation Section -->
+      <nav class="flex items-center gap-16 lg:mr-8">
+          <a href="#home" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Home</a>
+          <a href="#about" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">About</a>
+          <a href="#news" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">News</a>
+          <a href="#contact" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Contact</a>
+          <a href="#products" class="text-blue-500  px-12 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
+              Products
+          </a>
+      </nav>
+  </div>
+
+  {% block page %}
+
+  {% endblock %}
+  <footer class="bg-[#0C0F22] py-8 text-white border-t border-[#2BA9F0]">
+    <div class="max-w-[95%] mx-auto px-6">
+      <!-- Top Row -->
+      <div class="flex flex-col lg:flex-row justify-between items-start border-b border-[#2BA9F0] pb-6 mb-6 gap-8">
+        <!-- Left Section -->
+        <div class="flex gap-6">
+          <!-- Contact Section -->
+          <div class="flex flex-col min-w-fit">
+            <h2 class="text-5xl font-serif font-light mb-4">Contact</h2>
+            <p class="mb-1">Telephone: +46 703 497 011</p>
+            <p class="mb-4">Email: info@remospace.com</p>
+          </div>
+
+          <!-- Follow Us Section -->
+          <div class="flex flex-col min-w-fit mt-5">
+            <h2 class="text-xl font-serif font-light mb-4">Follow Us</h2>
+            <div class="flex items-center gap-4">
+
+              <!-- Social Media Icons -->
+              <a href="#" class="hover:text-blue-500">
+                <img src="{% static 'img/icons/linkedin.png' %}" alt="LinkedIn" class="w-9 h-9">
+              </a>
+              <a href="#" class="hover:text-blue-500">
+                <img src="{% static 'img/icons/mailchimp.png' %}" alt="Custom Icon" class="w-9 h-9">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex flex-col items-start text-left">
+          <img src="{% static 'img/logo-white.png' %}" alt="Remos Logo" class="mb-4 lg:w-[140px] h-auto">
+          <p class="text-sm text-white font-light">
+            <span class="font-semibold">Simplifying Satellite Ground Operations.</span><br>
+            Welcome to the next generation <br /> of space communications.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Bottom Row -->
+      <div class="flex flex-col lg:flex-row justify-between items-center">
+        <!-- Company Address -->
+        <div class="text-sm text-white font-light ml-4">
+          <p class="font-bold">Company Address</p>
+          <p>Remos Space Systems AB</p>
+          <p>Aurorum 1 C, SE-977 75 Luleå, Sweden</p>
+        </div>
+
+        <!-- EU Logo -->
+        <div class="mt-6 lg:mt-0 lg:mr-14">
+          <img src="{% static 'img/cass_eu.png' %}" alt="Cassini Accelerator Logo" class=" lg:w-48 h-auto">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+{% block page-based-js %}
+
+{% endblock %}
+</html>

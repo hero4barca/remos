@@ -1,526 +1,446 @@
-<!DOCTYPE html>
+{% extends "site_app/base.html" %}
 {% load static %}
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Remos</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css"> <!--  Tailwind CSS here -->
-  <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+  {% block title %}
+    Remosspace AB | Index
+  {% endblock %}
+
+  {% block page_based_head_includes %}
   <link rel="stylesheet" href="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.css' %}">
-  <script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
-</head>
-<body class="font-sans">
+  {% endblock %}
 
-  <!-- Floating Navbar -->
-  <div class="absolute top-5 left-1/2 transform -translate-x-1/2 lg:w-[80%] lg:flex-shrink-0 flex items-center justify-between h-[66px] bg-white backdrop-blur-md px-8 py-3 rounded-full nav-shadow z-10">
-      <!-- Logo Section -->
-      <div class="flex items-center">
-          <img src="{% static 'img/logo.png' %}" alt="Remos Logo" class="h-10" />
-      </div>
-
-      <!-- Navigation Section -->
-      <nav class="flex items-center gap-16 lg:mr-8">
-          <a href="#home" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Home</a>
-          <a href="#about" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">About</a>
-          <a href="#news" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">News</a>
-          <a href="#contact" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Contact</a>
-          <a href="#products" class="text-blue-500  px-12 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
-              Products
-          </a>
-      </nav>
-  </div>
-
-  <!-- Hero Section -->
-  <section class="relative bg-cover bg-center text-white text-center"
-          style="background-image: url('{% static "img/hero-image.png" %}'); background-size: cover; background-repeat: no-repeat; aspect-ratio: 16 / 8;">
-    <div class="absolute inset-0 flex flex-col items-center justify-center">
-      <h1 class="text-white text-center font-serif text-[64px] font-normal leading-normal">
-        The link between earth and space.
-      </h1>
-    </div>
-    <a href="#enquiry"
-      class="absolute bottom-10 mb-5 right-12 mr-7 bg-white text-blue-500 font-normal px-6 py-2 rounded-full light-box-shadow">
-      Make enquiry
-    </a>
-  </section>
-
-  <!-- Intro section-->
-  <section class="relative  px-[100px] py-[35px]">
-    <div class=" relative flex flex-col px-auto items-center justify-center min-h-max pb-16">
-
-      <div class="relative w-[657px] flex-grow lg:min-h-[550px] pb-2 "> <!-- Add padding-bottom here -->
-        <!-- Decorative Ellipses left-[225px] top-[1px]  -->
-        <div class="absolute w-[140px] h-[324px] left-[302px] top-[281px] rounded-[72px] border border-blue-500"></div>
-        <div class="absolute w-[110px] h-[341px] rounded-[72px] border border-blue-500 left-[248px] top-[1px]"></div>
-
-        <!-- Images -->
-        <img src="{% static 'img/satellite.png' %}" alt="Satellite"
-            class="absolute w-[270px] h-[320px] left-0 top-[230px] rounded-[96px]" />
-        <img src="{% static 'img/dish.png' %}" alt="Dish Antenna"
-            class="absolute w-[278px] h-[372px] left-[400px] top-0 rounded-[112px]"/>
-
-        <!-- Content Card -->
-        <div class="relative flex flex-col items-center justify-start gap-4 mt-16 ">
-          <div class="relative flex flex-col bg-[#FCFEFF] rounded-[119px] p-[29px_15px_15px_15px] h-[422px] w-[330px] gap-[18px] items-center text-center light-box-shadow flex-shrink-0">
-            <h2 class="text-4xl font-serif font-normal text-black">This is us</h2>
-            <p class="mt-4 text-black text-center font-sans text-[18px] font-light leading-normal">
-              We create flexible software solutions for managing satellite communications.
-              <br><br>
-              <span class="text-[17px] font-bold">Our technology replaces traditional hardware,</span>
-              making satellite ground operations more adaptable, cost-effective, and reliable for modern space missions.
-            </p>
-          </div>
+  {% block page %}
+      <!-- Hero Section -->
+      <section class="relative bg-cover bg-center text-white text-center"
+              style="background-image: url('{% static "img/hero-image.png" %}'); background-size: cover; background-repeat: no-repeat; aspect-ratio: 16 / 8;">
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+          <h1 class="text-white text-center font-serif text-[64px] font-normal leading-normal">
+            The link between earth and space.
+          </h1>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tagline -->
-  <section class="bg-[#0C0F22] items-center justify-center py-11">
-    <div class="text-white text-center font-serif text-[40px] font-normal leading-normal">
-      <p>Effortless Ground Control for Boundless Exploration.</p>
-    </div>
-  </section>
-
-  <!-- Product overview-->
-  <section class="bg-white py-12 px-6">
-    <!-- Product Overview -->
-    <div class="max-w-5xl  mx-auto h-[100%] flex flex-col lg:flex-row items-start gap-8 mb-16">
-      <!-- Text Content -->
-      <div class="lg:w-1/2 bg-white rounded-[81px] mix-blend-multiply light-box-shadow my-auto p-6 ">
-        <div class="text-black font-sans text-[18px] font-light leading-normal mb-4 mt-8 mr-5">
-          The Expedite product range offers a cutting-edge suite of tools for satellite ground operations, combining automation, scalability, and versatility.
-        </div>
-
-        <div class=" text-right pt-5 w-[95%]">
-          <a href="#" class="text-blue-500 text-lg font-medium hover:underline inline-block ">
-            Go to product page &gt;
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Image Section -->
-      <div class="lg:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px] ">
-        <!-- <div class="relative items-center w-full h-max">   </div> -->
-          <!-- Larger Ellipse (Background) -->
-          <div class="absolute bg-[#0C0F22] w-[285px] h-[284px] rounded-full top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
-
-          <!-- White Small Ellipse -->
-          <div class="absolute top-[21%] right-[46%] bg-white w-[15px] h-[15px] rounded-full z-10"></div>
-
-          <!-- Decorative Rounded Rectangles -->
-          <div class="absolute w-[127px] h-[268px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[40%] left-[38%] z-5"></div>
-          <div class="absolute w-[76px] h-[300px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[20%] left-[30%] z-5"></div>
-          <div class="absolute w-[96px] h-[325px] border-2 border-[#2BA9F0] rounded-[72px] top-[20%] right-[28%] z-5"></div>
-
-
-
-        <!-- Product Image -->
-        <img src="{% static 'img/router.png' %}" alt="Expedite product" class="relative w-[392px] h-auto z-20 rounded-lg">
-
-      </div>
-    </div>
-
-
-    <!-- Why Us Section -->
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-left mb-10">Why Us?</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 rounded-[81px] p-8 light-box-shadow">
-      <!-- Card 1 -->
-      <div class="p-6 border-b border-r border-[#2BA9F0] text-center">
-        <h3 class="text-lg font-semibold mb-6">Fully encompassing solution</h3>
-        <div class="text-gray-600 block text-left" > <p>Our integrated suite of software simplifies satellite operations, offering everything you need in one place.</p></div>
-      </div>
-      <!-- Card 2 -->
-      <div class="p-6 border-b border-r border-[#2BA9F0] text-center">
-        <h3 class="text-lg font-semibold mb-6">Seamless integration</h3>
-        <div class="text-gray-600 block text-left">
-          <p>    With a REST API for control and a Streaming API for data, our software seamlessly integrates with your existing systems. </p></div>
-
-        </div>
-      <!-- Card 3 -->
-      <div class="p-6 border-b border-[#2BA9F0] text-center">
-        <h3 class="text-lg font-semibold mb-6">Intuitive</h3>
-        <div class="text-gray-600 block text-left">
-        <p>
-          Designed with a low learning curve, our products are easy to use and master, ensuring efficient operations.
-        </p>
-      </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="p-6 border-r border-[#2BA9F0] text-center">
-        <h3 class="text-lg font-semibold mb-6">Satellite Compatibility</h3>
-        <div class="text-gray-600 block text-left"> <p>
-          Compatible with various satellites, our software ensures flexibility without vendor lock-in. </p></div>
-      </div>
-      <!-- Card 5 -->
-      <div class="p-6 border-r border-[#2BA9F0] text-center">
-        <h3 class="text-lg font-semibold mb-6">Flexible Licensing</h3>
-        <div class="text-gray-600 block text-left">
-        <p> Choose from term-based or perpetual licensing based on your needs.</p></div>
-      </div>
-      <!-- Card 6 -->
-      <div class="p-6 text-center">
-        <h3 class="text-lg font-semibold mb-6">Customer Support</h3>
-        <div class="text-gray-600 block text-left">
-          <p> Our team is always available to provide technical support to our valued customers when needed. </p></div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <!-- Testimonial Section -->
-  <section class="bg-[#0c0f22] py-16">
-    <div class="max-w-7xl mx-auto px-1">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Testimonial 1 -->
-        <div class="flex items-start gap-12 p-8 pl-14 bg-[#0c0f22] rounded-[75px] bg-opacity-80 bg-blend-darken dark-box-shadow">
-          <!-- Image -->
-          <div class="relative flex-shrink-0">
-            <img src="{% static 'img/testi-images/mattias.png' %}" alt="Matias Campos" class="filter grayscale w-[160px] h-[130px]  rounded-[48px] object-cover">
-            <!-- Quotation Icon -->
-            <div class="absolute -top-4 left-9  rounded-full flex items-center justify-center text-blue-500 text-8xl font-serif font-bold">
-              &ldquo;
-            </div>
-          </div>
-          <!-- Content -->
-          <div>
-            <h3 class="text-white font-semibold text-lg">Matias Campos</h3>
-            <p class="text-gray-300 text-sm mb-4">CEO and Founder</p>
-            <p class="text-gray-300 text-sm font-light italic">
-              "It is incredibly rewarding to collaborate with fellow engineers who, like me, are invested beyond their home country in the pursuit of space exploration."
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="flex items-start gap-12 p-8 pl-14 bg-[#0c0f22] rounded-[75px] bg-opacity-80 bg-blend-darken dark-box-shadow">
-          <!-- Image -->
-          <div class="relative flex-shrink-0">
-            <img src="{% static 'img/testi-images/julian.png' %}" alt="Julian Fernandez" class="filter grayscale w-[160px] h-[130px] rounded-[48px] object-cover">
-            <!-- Quotation Icon -->
-            <div class="absolute -top-4 left-9  rounded-full flex items-center justify-center text-blue-500 text-8xl font-serif font-bold">
-              &ldquo;
-            </div>
-          </div>
-          <!-- Content -->
-          <div>
-            <h3 class="text-white font-semibold text-lg">Julian Fernandez</h3>
-            <p class="text-gray-300 text-sm mb-4">CEO & Co-Founder</p>
-            <p class="text-gray-300 text-sm font-light italic">
-              "Fossa Explorer is the leading satellite radio and control solution, which enables seamless communication across time zones. We are excited about deploying more Fossa systems for our customers worldwide using FOSSA Ground Station."
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Map Section -->
-  <section id="map-section" class="bg-white pt-8 pb-4">
-    <!-- logo carousel-->
-    <div class="bg-white py-2">
-      <div class="swiper-container max-w-full mx-auto">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/ast.png' %}" alt="Australintu logo" class="max-h-24 object-contain">
-          </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/contec.png' %}" alt="Contec Logo" class="max-h-24 object-contain">
-          </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/fossa.png' %}" alt="Fossa Systems Logo" class="max-h-24 object-contain">
-          </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/gac.png' %}" alt="DLR GAC Logo" class="max-h-24 object-contain">
-          </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/inta.png' %}" alt="INTA Logo" class="max-h-24 object-contain">
-          </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/ltu.png' %}" alt="LTU Logo" class="max-h-24 object-contain">
-          </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <img src="{% static 'img/cus-logos/szg.png' %}" alt="Space Zero Gravity Logo" class="max-h-24 object-contain">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Map display -->
-    <div class="map-area">
-      <div class="ml-[5%]"> <span class="text-[#0C0F22] font-serif text-3xl font-normal leading-normal">We're everewhere</span></div>
-      <div class="world-map w-[80%] lg:w-[55%] max-w-[1100px] mx-auto p-4 relative">
-        <img src="{% static 'img/world-map.png' %}"  alt="world map showing our customers locations" />
-        <div class="pin mexico">
-            <span>Mexico </span>
-        </div>
-        <div class="pin united-states">
-                <span>United States </span>
-        </div>
-        <div class="pin germany">
-            <span>Germany</span>
-        </div>
-        <div class="pin spain">
-                <span>Spain </span>
-        </div>
-
-        <div class="pin canary-island">
-          <span> Canary Island</span>
-        </div>
-
-        <div class="pin sweden">
-            <span>Sweden</span>
-        </div>
-
-        <div class="pin ecuador">
-            <span>Ecuador</span>
-        </div>
-        <div class="pin south-korea">
-            <span>South Korea</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Enterprise section -->
-  <section class="bg-[#0C0F22] py-12">
-    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 px-4">
-      <!-- Image -->
-      <div class="flex-shrink-0">
-        <img
-          src="{% static 'img/moses-pic.png' %}"
-          alt="Moses Browne Mwakyanjala"
-          class="rounded-[40%] grayscale w-48 max-h-34 object-cover"
-        />
-      </div>
-      <!-- Content -->
-      <div class="text-white text-center lg:text-left">
-        <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-2">Want to know more about our enterprise?</p>
-        <p class="font-bold text-lg mb-4">Reach out to</p>
-        <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-2">Moses Browne Mwakyanjala</p>
-        <a href="mailto:moses.browne.mwakyanjala@mosspace.com" class="text-blue-400 underline text-lg">
-          moses.browne.mwakyanjala@mosspace.com
+        <a href="#enquiry"
+          class="absolute bottom-10 mb-5 right-12 mr-7 bg-white text-blue-500 font-normal px-6 py-2 rounded-full light-box-shadow">
+          Make enquiry
         </a>
-        <p class=" text-lg mt-2">+46 10-278 21 74</p>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Customer installations -->
-  <section class="bg-white py-16 mx-3">
-    <div class="lg:w-[90%] min-h-fit mx-auto px-6 relative ">
-      <!-- Section Title -->
-      <h2 class="text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
+      <!-- Intro section-->
+      <section class="relative  px-[100px] py-[35px]">
+        <div class=" relative flex flex-col px-auto items-center justify-center min-h-max pb-16">
 
-        <!-- Swiper carousel -->
-        <div class="swiper-customer-installations w-full max-w-full overflow-x-hidden py-3">
-          <div class="swiper-wrapper w-full">
-            <!-- Card 1 -->
-            <div class="swiper-slide">
-              <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-                <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-                <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-                <p class="text-gray-500 text-sm">
-                  Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-                </p>
-              </div>
-            </div>
+          <div class="relative w-[657px] flex-grow lg:min-h-[550px] pb-2 "> <!-- Add padding-bottom here -->
+            <!-- Decorative Ellipses left-[225px] top-[1px]  -->
+            <div class="absolute w-[140px] h-[324px] left-[302px] top-[281px] rounded-[72px] border border-blue-500"></div>
+            <div class="absolute w-[110px] h-[341px] rounded-[72px] border border-blue-500 left-[248px] top-[1px]"></div>
 
-            <!-- Card 2 -->
-            <div class="swiper-slide">
-              <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-                <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-                <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-                <p class="text-gray-500 text-sm">
-                  Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-                </p>
-              </div>
-            </div>
+            <!-- Images -->
+            <img src="{% static 'img/satellite.png' %}" alt="Satellite"
+                class="absolute w-[270px] h-[320px] left-0 top-[230px] rounded-[96px]" />
+            <img src="{% static 'img/dish.png' %}" alt="Dish Antenna"
+                class="absolute w-[278px] h-[372px] left-[400px] top-0 rounded-[112px]"/>
 
-            <!-- Card 3 -->
-            <div class="swiper-slide">
-              <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-                <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-                <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-                <p class="text-gray-500 text-sm">
-                  Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="swiper-slide">
-              <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-                <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-                <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-                <p class="text-gray-500 text-sm">
-                  Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="swiper-slide">
-              <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
-                <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
-                <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
-                <p class="text-gray-500 text-sm">
-                  Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+            <!-- Content Card -->
+            <div class="relative flex flex-col items-center justify-start gap-4 mt-16 ">
+              <div class="relative flex flex-col bg-[#FCFEFF] rounded-[119px] p-[29px_15px_15px_15px] h-[422px] w-[330px] gap-[18px] items-center text-center light-box-shadow flex-shrink-0">
+                <h2 class="text-4xl font-serif font-normal text-black">This is us</h2>
+                <p class="mt-4 text-black text-center font-sans text-[18px] font-light leading-normal">
+                  We create flexible software solutions for managing satellite communications.
+                  <br><br>
+                  <span class="text-[17px] font-bold">Our technology replaces traditional hardware,</span>
+                  making satellite ground operations more adaptable, cost-effective, and reliable for modern space missions.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Swiper Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-  </section>
+      <!-- Tagline -->
+      <section class="bg-[#0C0F22] items-center justify-center py-11">
+        <div class="text-white text-center font-serif text-[40px] font-normal leading-normal">
+          <p>Effortless Ground Control for Boundless Exploration.</p>
+        </div>
+      </section>
 
-  <!-- Blog section -->
-  <section  class="bg-[#0C0F22] py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <!-- News Section -->
-      <div class="mb-16">
-        <h2 class="text-white text-4xl  mb-4 font-serif">News</h2>
-        <p class="text-white mb-8">
-          Read about our latest happenings and learn new insights through our Podcast.
-        </p>
+      <!-- Product overview-->
+      <section class="bg-white py-12 px-6">
+        <!-- Product Overview -->
+        <div class="max-w-5xl  mx-auto h-[100%] flex flex-col lg:flex-row items-start gap-8 mb-16">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 bg-white rounded-[81px] mix-blend-multiply light-box-shadow my-auto p-6 ">
+            <div class="text-black font-sans text-[18px] font-light leading-normal mb-4 mt-8 mr-5">
+              The Expedite product range offers a cutting-edge suite of tools for satellite ground operations, combining automation, scalability, and versatility.
+            </div>
 
-        <!-- News Cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-0">
+            <div class=" text-right pt-5 w-[95%]">
+              <a href="#" class="text-blue-500 text-lg font-medium hover:underline inline-block ">
+                Go to product page &gt;
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Image Section -->
+          <div class="lg:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px] ">
+            <!-- <div class="relative items-center w-full h-max">   </div> -->
+              <!-- Larger Ellipse (Background) -->
+              <div class="absolute bg-[#0C0F22] w-[285px] h-[284px] rounded-full top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
+
+              <!-- White Small Ellipse -->
+              <div class="absolute top-[21%] right-[46%] bg-white w-[15px] h-[15px] rounded-full z-10"></div>
+
+              <!-- Decorative Rounded Rectangles -->
+              <div class="absolute w-[127px] h-[268px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[40%] left-[38%] z-5"></div>
+              <div class="absolute w-[76px] h-[300px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[20%] left-[30%] z-5"></div>
+              <div class="absolute w-[96px] h-[325px] border-2 border-[#2BA9F0] rounded-[72px] top-[20%] right-[28%] z-5"></div>
+
+
+
+            <!-- Product Image -->
+            <img src="{% static 'img/router.png' %}" alt="Expedite product" class="relative w-[392px] h-auto z-20 rounded-lg">
+
+          </div>
+        </div>
+
+
+        <!-- Why Us Section -->
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold text-left mb-10">Why Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 rounded-[81px] p-8 light-box-shadow">
           <!-- Card 1 -->
-          <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
-            <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
-            <p class="text-white mt-auto">
-              Join us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-
-          <!-- Card 2 -->
-          <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
-            <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
-            <p class="text-white mt-auto">
-              Visit us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-
-          <!-- Card 3 -->
-          <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
-            <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
-            <p class="text-white mt-auto">
-              Learn more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-
-          <!-- Card 4 -->
-          <div class="p-9  flex flex-col">
-            <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
-            <p class="text-white mt-auto">
-              Discover more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        </div>
-
-
-        <!-- More Articles -->
-        <div class="mt-10">
-          <a href="#" class="text-blue-400 hover:underline">
-            More articles >
-          </a>
-        </div>
-      </div>
-
-      <!-- Podcast Section -->
-      <div class="flex flex-col lg:flex-row items-center justify-between  w-[70%]">
-        <!-- Podcast Info -->
-        <div class="bg-[#0C0F22] dark-box-shadow rounded-[15%] p-6 flex-1 max-w-[45%] ">
-          <h3 class="text-white text-4xl font-serif mb-4">Podcast</h3>
-          <p class="text-white mb-4">
-            Listen to our podcast - <span class="font-bold">Space to Ground.</span>
-          </p>
-          <p class="text-white mb-6">
-            This podcast is meant to drive more <span class="font-bold">awareness</span>, explore the <span class="font-bold">latest technologies</span>,
-            and <span class="font-bold">help the industry navigate collaborative opportunities</span>.
-          </p>
-          <a href="#" class="text-blue-400 hover:underline">
-            Browse episodes >
-          </a>
-        </div>
-        <!-- Podcast Logo -->
-        <div class="flex-shrink-0 ">
-          <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-64 h-auto lg:min-w-[368px]">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-[#0C0F22] py-8 text-white border-t border-[#2BA9F0]">
-    <div class="max-w-7xl mx-auto px-6">
-      <!-- Top Row -->
-      <div class="flex flex-col lg:flex-row justify-between items-start border-b border-[#2BA9F0] pb-6 mb-6 gap-8">
-        <!-- Left Section -->
-        <div class="flex gap-6">
-          <!-- Contact Section -->
-          <div class="flex flex-col min-w-fit">
-            <h2 class="text-6xl font-serif font-light mb-4">Contact</h2>
-            <p class="mb-1">Telephone: +46 703 497 011</p>
-            <p class="mb-4">Email: info@remospace.com</p>
+          <div class="p-6 border-b border-r border-[#2BA9F0] text-center">
+            <h3 class="text-lg font-semibold mb-6">Fully encompassing solution</h3>
+            <div class="text-gray-600 block text-left" > <p>Our integrated suite of software simplifies satellite operations, offering everything you need in one place.</p></div>
           </div>
+          <!-- Card 2 -->
+          <div class="p-6 border-b border-r border-[#2BA9F0] text-center">
+            <h3 class="text-lg font-semibold mb-6">Seamless integration</h3>
+            <div class="text-gray-600 block text-left">
+              <p>    With a REST API for control and a Streaming API for data, our software seamlessly integrates with your existing systems. </p></div>
 
-          <!-- Follow Us Section -->
-          <div class="flex flex-col min-w-fit mt-5">
-            <h2 class="text-xl font-serif font-light mb-4">Follow Us</h2>
-            <div class="flex items-center gap-4">
+            </div>
+          <!-- Card 3 -->
+          <div class="p-6 border-b border-[#2BA9F0] text-center">
+            <h3 class="text-lg font-semibold mb-6">Intuitive</h3>
+            <div class="text-gray-600 block text-left">
+            <p>
+              Designed with a low learning curve, our products are easy to use and master, ensuring efficient operations.
+            </p>
+          </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="p-6 border-r border-[#2BA9F0] text-center">
+            <h3 class="text-lg font-semibold mb-6">Satellite Compatibility</h3>
+            <div class="text-gray-600 block text-left"> <p>
+              Compatible with various satellites, our software ensures flexibility without vendor lock-in. </p></div>
+          </div>
+          <!-- Card 5 -->
+          <div class="p-6 border-r border-[#2BA9F0] text-center">
+            <h3 class="text-lg font-semibold mb-6">Flexible Licensing</h3>
+            <div class="text-gray-600 block text-left">
+            <p> Choose from term-based or perpetual licensing based on your needs.</p></div>
+          </div>
+          <!-- Card 6 -->
+          <div class="p-6 text-center">
+            <h3 class="text-lg font-semibold mb-6">Customer Support</h3>
+            <div class="text-gray-600 block text-left">
+              <p> Our team is always available to provide technical support to our valued customers when needed. </p></div>
+          </div>
+        </div>
+      </div>
+      </section>
 
-              <!-- Social Media Icons -->
-              <a href="#" class="hover:text-blue-500">
-                <img src="{% static 'img/icons/linkedin.png' %}" alt="LinkedIn" class="w-9 h-9">
-              </a>
-              <a href="#" class="hover:text-blue-500">
-                <img src="{% static 'img/icons/mailchimp.png' %}" alt="Custom Icon" class="w-9 h-9">
-              </a>
+      <!-- Testimonial Section -->
+      <section class="bg-[#0c0f22] py-16">
+        <div class="max-w-[90%] mx-auto px-1">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Testimonial 1 -->
+            <div class="flex items-start gap-12 p-8 pl-14 bg-[#0c0f22] rounded-[75px] bg-opacity-80 bg-blend-darken dark-box-shadow">
+              <!-- Image -->
+              <div class="relative flex-shrink-0">
+                <img src="{% static 'img/testi-images/mattias.png' %}" alt="Matias Campos" class="filter grayscale w-[160px] h-[130px]  rounded-[48px] object-cover">
+                <!-- Quotation Icon -->
+                <div class="absolute -top-4 left-9  rounded-full flex items-center justify-center text-blue-500 text-8xl font-serif font-bold">
+                  &ldquo;
+                </div>
+              </div>
+              <!-- Content -->
+              <div>
+                <h3 class="text-white font-semibold text-lg">Matias Campos</h3>
+                <p class="text-gray-300 text-sm mb-4">CEO and Founder</p>
+                <p class="text-gray-300 text-sm font-light italic">
+                  "It is incredibly rewarding to collaborate with fellow engineers who, like me, are invested beyond their home country in the pursuit of space exploration."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="flex items-start gap-12 p-8 pl-14 bg-[#0c0f22] rounded-[75px] bg-opacity-80 bg-blend-darken dark-box-shadow">
+              <!-- Image -->
+              <div class="relative flex-shrink-0">
+                <img src="{% static 'img/testi-images/julian.png' %}" alt="Julian Fernandez" class="filter grayscale w-[160px] h-[130px] rounded-[48px] object-cover">
+                <!-- Quotation Icon -->
+                <div class="absolute -top-4 left-9  rounded-full flex items-center justify-center text-blue-500 text-8xl font-serif font-bold">
+                  &ldquo;
+                </div>
+              </div>
+              <!-- Content -->
+              <div>
+                <h3 class="text-white font-semibold text-lg">Julian Fernandez</h3>
+                <p class="text-gray-300 text-sm mb-4">CEO & Co-Founder</p>
+                <p class="text-gray-300 text-sm font-light italic">
+                  "Fossa Explorer is the leading satellite radio and control solution, which enables seamless communication across time zones. We are excited about deploying more Fossa systems for our customers worldwide using FOSSA Ground Station."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section id="map-section" class="bg-white pt-8 pb-4">
+        <!-- logo carousel-->
+        <div class="bg-white py-2">
+          <div class="swiper-container max-w-full mx-auto">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/ast.png' %}" alt="Australintu logo" class="max-h-24 object-contain">
+              </div>
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/contec.png' %}" alt="Contec Logo" class="max-h-24 object-contain">
+              </div>
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/fossa.png' %}" alt="Fossa Systems Logo" class="max-h-24 object-contain">
+              </div>
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/gac.png' %}" alt="DLR GAC Logo" class="max-h-24 object-contain">
+              </div>
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/inta.png' %}" alt="INTA Logo" class="max-h-24 object-contain">
+              </div>
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/ltu.png' %}" alt="LTU Logo" class="max-h-24 object-contain">
+              </div>
+              <div class="swiper-slide flex justify-center items-center">
+                <img src="{% static 'img/cus-logos/szg.png' %}" alt="Space Zero Gravity Logo" class="max-h-24 object-contain">
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Section -->
-        <div class="flex flex-col items-start text-left">
-          <img src="{% static 'img/logo-white.png' %}" alt="Remos Logo" class="mb-4 lg:w-[140px] h-auto">
-          <p class="text-sm text-white font-light">
-            <span class="font-semibold">Simplifying Satellite Ground Operations.</span><br>
-            Welcome to the next generation <br /> of space communications.
-          </p>
+        <!-- Map display -->
+        <div class="map-area">
+          <div class="ml-[5%]"> <span class="text-[#0C0F22] font-serif text-3xl font-normal leading-normal">We're everewhere</span></div>
+          <div class="world-map w-[80%] lg:w-[55%] max-w-[1100px] mx-auto p-4 relative">
+            <img src="{% static 'img/world-map.png' %}"  alt="world map showing our customers locations" />
+            <div class="pin mexico">
+                <span>Mexico </span>
+            </div>
+            <div class="pin united-states">
+                    <span>United States </span>
+            </div>
+            <div class="pin germany">
+                <span>Germany</span>
+            </div>
+            <div class="pin spain">
+                    <span>Spain </span>
+            </div>
+
+            <div class="pin canary-island">
+              <span> Canary Island</span>
+            </div>
+
+            <div class="pin sweden">
+                <span>Sweden</span>
+            </div>
+
+            <div class="pin ecuador">
+                <span>Ecuador</span>
+            </div>
+            <div class="pin south-korea">
+                <span>South Korea</span>
+            </div>
+
+          </div>
         </div>
-      </div>
+      </section>
 
-
-      <!-- Bottom Row -->
-      <div class="flex flex-col lg:flex-row justify-between items-center">
-        <!-- Company Address -->
-        <div class="text-sm text-white font-light ml-4">
-          <p class="font-bold">Company Address</p>
-          <p>Remos Space Systems AB</p>
-          <p>Aurorum 1 C, SE-977 75 Luleå, Sweden</p>
+      <!-- Enterprise section -->
+      <section class="bg-[#0C0F22] py-12">
+        <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 px-4">
+          <!-- Image -->
+          <div class="flex-shrink-0">
+            <img
+              src="{% static 'img/moses-pic.png' %}"
+              alt="Moses Browne Mwakyanjala"
+              class="rounded-[40%] grayscale w-48 max-h-34 object-cover"
+            />
+          </div>
+          <!-- Content -->
+          <div class="text-white text-center lg:text-left">
+            <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-2">Want to know more about our enterprise?</p>
+            <p class="font-bold text-lg mb-4">Reach out to</p>
+            <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-2">Moses Browne Mwakyanjala</p>
+            <a href="mailto:moses.browne.mwakyanjala@mosspace.com" class="text-blue-400 underline text-lg">
+              moses.browne.mwakyanjala@mosspace.com
+            </a>
+            <p class=" text-lg mt-2">+46 10-278 21 74</p>
+          </div>
         </div>
+      </section>
 
-        <!-- EU Logo -->
-        <div class="mt-6 lg:mt-0 lg:mr-14">
-          <img src="{% static 'img/cass_eu.png' %}" alt="Cassini Accelerator Logo" class=" lg:w-48 h-auto">
+      <!-- Customer installations -->
+      <section class="bg-white py-16 mx-3">
+        <div class="lg:w-[90%] min-h-fit mx-auto px-6 relative ">
+          <!-- Section Title -->
+          <h2 class="text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
+
+            <!-- Swiper carousel -->
+            <div class="swiper-customer-installations w-full max-w-full overflow-x-hidden py-3">
+              <div class="swiper-wrapper w-full">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+                    <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+                    <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+                    <p class="text-gray-500 text-sm">
+                      Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+                    <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+                    <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+                    <p class="text-gray-500 text-sm">
+                      Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide">
+                  <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+                    <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+                    <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+                    <p class="text-gray-500 text-sm">
+                      Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="swiper-slide">
+                  <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+                    <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+                    <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+                    <p class="text-gray-500 text-sm">
+                      Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide">
+                  <div class="border border-blue-200 rounded-[81px] p-8 light-box-shadow">
+                    <h3 class="text-[16px] font-medium text-gray-800 mb-2">Ground station... lorem ipsum dolor sit amet, consectetur...</h3>
+                    <img src="{% static 'img/cii.png' %}" alt="Ground Station" class="rounded-[17%] mb-4">
+                    <p class="text-gray-500 text-sm">
+                      Join us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo auctor sem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </div>
-  </footer>
+      </section>
 
-</body>
+      <!-- Blog section -->
+      <section  class="bg-[#0C0F22] py-16">
+        <div class="max-w-[90%] mx-auto px-4">
+          <!-- News Section -->
+          <div class="mb-16">
+            <h2 class="text-white text-4xl  mb-4 font-serif">News</h2>
+            <p class="text-white mb-8">
+              Read about our latest happenings and learn new insights through our Podcast.
+            </p>
+
+            <!-- News Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-0">
+              <!-- Card 1 -->
+              <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
+                <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+                <p class="text-white mt-auto">
+                  Join us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+              <!-- Card 2 -->
+              <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
+                <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+                <p class="text-white mt-auto">
+                  Visit us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+              <!-- Card 3 -->
+              <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
+                <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+                <p class="text-white mt-auto">
+                  Learn more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+              <!-- Card 4 -->
+              <div class="p-9  flex flex-col">
+                <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
+                <p class="text-white mt-auto">
+                  Discover more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            </div>
+
+
+            <!-- More Articles -->
+            <div class="mt-10">
+              <a href="#" class="text-blue-400 hover:underline">
+                More articles >
+              </a>
+            </div>
+          </div>
+
+          <!-- Podcast Section -->
+          <div class="flex flex-col lg:flex-row items-center justify-between  w-[70%]">
+            <!-- Podcast Info -->
+            <div class="bg-[#0C0F22] dark-box-shadow rounded-[15%] p-6 flex-1 max-w-[45%] ">
+              <h3 class="text-white text-4xl font-serif mb-4">Podcast</h3>
+              <p class="text-white mb-4">
+                Listen to our podcast - <span class="font-bold">Space to Ground.</span>
+              </p>
+              <p class="text-white mb-6">
+                This podcast is meant to drive more <span class="font-bold">awareness</span>, explore the <span class="font-bold">latest technologies</span>,
+                and <span class="font-bold">help the industry navigate collaborative opportunities</span>.
+              </p>
+              <a href="#" class="text-blue-400 hover:underline">
+                Browse episodes >
+              </a>
+            </div>
+            <!-- Podcast Logo -->
+            <div class="flex-shrink-0 ">
+              <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-64 h-auto lg:min-w-[368px]">
+            </div>
+          </div>
+        </div>
+      </section>
+  {% endblock %}
+
 {% block page-based-js %}
+<script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
 <script>
 
   // customers logos slider
@@ -567,4 +487,3 @@
   });
 </script>
 {% endblock %}
-</html>
