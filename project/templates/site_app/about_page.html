@@ -27,7 +27,7 @@
              <div class="absolute w-[147px] h-[306px] border-2 border-[#2BA9F0] rounded-[93px] top-[13%] left-[45%] z-5"></div>
 
           <!-- CEO -->
-          <div class="flex flex-row items-center absolute top-3 left-[3%] z-10">
+          <div class="flex flex-row items-center absolute top-3 left-[3%] z-10 flex-shrink-0">
             <!-- Details Section -->
             <div class="flex flex-col text-right order-1 mr-8">
                 <p class="font-sans font-lg font-bold">CEO</p>
@@ -42,7 +42,7 @@
           </div>
 
           <!-- COO -->
-          <div class="flex flex-row items-center absolute top-[17%] right-[11%] z-10">
+          <div class="flex flex-row items-center absolute top-[17%] right-[11%] z-10 flex-shrink-0">
             <!-- Details Section -->
             <div class="flex flex-col text-left order-2 ml-8">
             <p class="font-sans font-lg font-bold">COO</p>
@@ -57,7 +57,7 @@
           </div>
 
           <!-- CSO -->
-          <div class="flex flex-row items-center absolute bottom-[12%] left-[15%] z-10">
+          <div class="flex flex-row items-center absolute bottom-[12%] left-[15%] z-10 flex-shrink-0">
             <!-- Details Section -->
             <div class="flex flex-col text-right order-1 mr-8">
                 <p class="font-sans font-lg font-bold">CSO</p>
@@ -131,7 +131,7 @@
     </div>
   </section>
 
-  <!-- Map Section -->
+  <!-- partners Section -->
   <section id="partners" class="bg-white pt-6 pb-4">
     <div class="w-[80%] mx-auto ">
         <h2 class="font-serif text-[#0C0F22] font-normal text-3xl ">Our Partners</h2>
@@ -162,6 +162,70 @@
             <img src="{% static 'img/partners/rn.png' %}" alt="Region Norrbotten" class="max-h-24 object-contain">
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-black py-16 px-8">
+    <div class="max-w-7xl lg:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- First Row -->
+      <div class="flex flex-col justify-center h-full text-left">
+        <h3 class="text-2xl font-serif font-light mb-4">Higher demand</h3>
+        <p class="text-gray-600 font-sans">
+         <span class="font-bold"> As demand for space data grows, so does the need for satellites.</span> Smaller, lighter, and more affordable satellites are meeting this need, with over 30,000 expected in orbit by 2030—advancing global connectivity and exploration.
+        </p>
+      </div>
+      <div class="flex items-center lg:justify-end">
+        <img
+          src="{% static 'img/about-1.png' %}"
+          alt="Satellite in space"
+          class="w-[473px] rounded-[75px] h-auto max-h-[273px] object-cover"
+        />
+      </div>
+
+      <!-- Second Row -->
+      <div class="flex items-center order-last md:order-none lg:justify-start">
+        <img
+          src="{% static 'img/about-2.png' %}"
+          alt="Satellite dish"
+          class="w-[473px] rounded-[75px] h-auto max-h-[273px] object-cover"
+        />
+      </div>
+      <div class="flex flex-col justify-center h-full text-right">
+        <h3 class="text-2xl font-serif font-light mb-4">We provide efficiency</h3>
+        <p class="text-gray-600 font-sans">
+         <span class="font-bold">The surge in new satellites creates a major challenge: the need for cost-effective, adaptable ground systems.</span> Traditional ground operators rely on costly and complex solutions for these needs. At Remos, we saw this gap and launched our company to transform ground operations for the new space era.
+        </p>
+      </div>
+
+      <!-- Third Row -->
+      <div class="flex flex-col justify-center h-full text-left">
+        <h3 class="text-2xl font-serif font-light mb-4">An all-encompassing solution</h3>
+        <p class="text-gray-600 font-sans">
+        <span class="font-bold">From mission scheduling to waveform processing: Our software modern provides a full suite of capabilities—all accessible through a single API.</span> Unlike traditional stations that rely on manual processes and lack compatibility with modern missions, Remos offers seamlessly integrated, automated software.
+        </p>
+      </div>
+      <div class="flex items-center lg:justify-end">
+        <img
+          src="{% static 'img/about-3.jpg' %}"
+          alt="View of Earth"
+          class="w-[473px] rounded-[75px] h-auto max-h-[273px] object-cover"
+        />
+      </div>
+
+      <!-- Fourth Row -->
+      <div class="flex items-center order-last md:order-none lg:justify-start">
+        <img
+          src="{% static 'img/about-4.jpg' %}"
+          alt="Stars and galaxy"
+          class="w-[473px] rounded-[75px] h-auto max-h-[273px] object-cover"
+        />
+      </div>
+      <div class="flex flex-col justify-center h-full text-right">
+        <h3 class="text-2xl font-serif font-light mb-4">We exist to support the explorer</h3>
+        <p class="text-gray-600 font-sans">
+         <span class="font-bold">Our solutions let space companies focus on exploration and discovery while we handle the complexity.</span>  We're pioneering a new era of ground stations that are agile, scalable, and automated. Unlike traditional solutions, Remos transforms ground stations into APIs.
+        </p>
       </div>
     </div>
   </section>
