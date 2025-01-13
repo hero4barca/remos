@@ -1,0 +1,194 @@
+{% extends "site_app/base.html" %}
+{% load static %}
+
+  {% block title %}
+    Remosspace AB | Products
+  {% endblock %}
+
+  {% block page_based_head_includes %}
+  <link rel="stylesheet" href="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.css' %}">
+  {% endblock %}
+
+  {% block page %}
+
+  <!-- Products-->
+  <!-- Products-->
+<section class="bg-white py-12 px-6">
+  <!-- Product Overview -->
+  <div class="max-w-5xl mx-auto h-full mt-16 flex flex-col lg:flex-row items-start gap-8">
+    <!-- Text Section -->
+    <div class="lg:w-1/2 flex flex-col text-center lg:text-left">
+      <h2 class="text-3xl font-serif font-normal mb-2 text-[#0C0F22]">Product Overview</h2>
+      <h3 class="text-[25px] text-black font-serif font-light mb-4"> Expedite Series </h3>
+      <p class="text-base font-sans font-normal text-gray-600 leading-relaxed mb-6">
+        <span class="font-bold">The Expedite product range offers a cutting-edge suite of tools for satellite ground operations,</span> combining automation, scalability, and versatility. Designed to simplify complex mission management, Expedite products power seamless communication, tracking, and control, empowering operators with advanced features in a streamlined, user-friendly package.
+      </p>
+      <div class="flex flex-col items-center gap-4">
+        <button class=" text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans lg:w-[60%] light-box-shadow">
+          Expedite Turnkey Ground Station
+        </button>
+        <button class=" text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans lg:w-[60%] light-box-shadow">
+          Expedite Sequencer
+        </button>
+        <button class=" text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans lg:w-[60%] light-box-shadow">
+          Expedite Software Modem
+        </button>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="lg:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px]">
+      <!-- Larger Ellipse (Background) -->
+      <div class="absolute bg-[#0C0F22] w-[285px] h-[284px] rounded-full top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
+
+      <!-- White Small Ellipse -->
+      <div class="absolute top-[21%] right-[46%] bg-white w-[15px] h-[15px] rounded-full z-10"></div>
+
+      <!-- Decorative Rounded Rectangles -->
+      <div class="absolute w-[127px] h-[268px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[40%] left-[38%] z-5"></div>
+      <div class="absolute w-[76px] h-[300px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[20%] left-[30%] z-5"></div>
+      <div class="absolute w-[96px] h-[325px] border-2 border-[#2BA9F0] rounded-[72px] top-[20%] right-[28%] z-5"></div>
+
+      <!-- Product Image -->
+      <img src="{% static 'img/router.png' %}" alt="Expedite product" class="relative w-[392px] h-auto z-20 rounded-lg">
+    </div>
+  </div>
+
+  <!-- Expedite Software Modem -->
+  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-12">
+    <!-- Text Content -->
+    <div class="lg:w-1/2  font-sans font-lg">
+      <h3 class="text-xl font-sans font-bold mb-1">Expedite Software Modem</h3>
+      <p class="text-base font-light  text-gray-600 leading-relaxed">
+        The Expedite Software Modem is a software-based communication tool for controlling and communicating with small satellites. It combines several functions into one solution: it works as a modem, controls the antenna, and schedules mission tasks. This modem can handle different types of satellite communication and formats, making it compatible with a variety of satellite systems like Geostationary and S-EOs. It has a user-friendly interface, advanced diagnostic tools, and can be controlled via a REST API, allowing easy integration with other software and automation of routine operations.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="lg:w-1/2 flex justify-center">
+      <div class="rounded-[60px] light-box-shadow min-h-full px-4 pb-7 pt-8">
+        <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="w-[601px] h-auto ">
+      </div>
+    </div>
+  </div>
+
+  <!-- Expedite Turnkey -->
+  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-12">
+    <!-- Text Content -->
+    <div class="lg:w-1/2  font-sans font-lg">
+      <h3 class="text-xl font-sans font-bold mb-1">Expedite Turnkey Ground Station</h3>
+      <p class="text-base font-light  text-gray-600 leading-relaxed">
+        The Expedite Turnkey Ground Station is a complete, ready-to-use ground station package designed for
+        satellite missions. It includes everything needed for ground communication, such as antennas,
+        a transceiver, and a sequencing system. The antennas can handle different frequencies (UHF, VHF,
+        and S-band), making it adaptable to various satellite requirements. This ground station system is
+        simple to set up and operate, with automation
+        features like Doppler compensation and mission scheduling to help reduce operational complexity.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="lg:w-1/2 flex justify-center">
+      <div class="rounded-[60px] light-box-shadow min-h-full px-4 pb-7 pt-8">
+        <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="w-[601px] h-auto ">
+      </div>
+    </div>
+  </div>
+
+   <!-- Expedite sequencer -->
+   <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-12">
+    <!-- Text Content -->
+    <div class="lg:w-1/2  font-sans font-lg">
+      <h3 class="text-xl font-sans font-bold mb-1">Expedite Sequencer</h3>
+      <p class="text-base font-light  text-gray-600 leading-relaxed">
+        The Expedite Sequencer is a device that manages the timing and coordination of satellite signal
+        transmissions. It includes an embedded computer and display for real-time monitoring and can operate
+        automatically or be controlled remotely. With strong connectivity options and built-in RF switches,
+        amplifiers, and sensors, the Sequencer enables smooth and efficient signal management.
+        This system is particularly useful for operators who need to manage satellite communications remotely,
+         as it provides real-time sensor data and control over transmission power and timing.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="lg:w-1/2 flex justify-center">
+      <div class="rounded-[60px] light-box-shadow min-h-full px-4 pb-7 pt-8">
+        <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="w-[601px] h-auto ">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Tagline -->
+<section class="bg-[#0C0F22] items-center justify-center py-11">
+  <div class="text-white text-center font-serif text-[40px] font-normal leading-normal">
+    <p>Find which product setup suits you best.</p>
+  </div>
+</section>
+
+<!-- Products comparison-->
+<section class="bg-white py-16 px-6">
+  <!-- Products Section -->
+  <div class="max-w-[80%] mx-auto">
+    <!-- Product Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <!-- Card 1 -->
+      <div class="text-lg font-sans font-light">
+        <h3 class=" text-center mb-5 light-box-shadow py-2 rounded-[50px]">Expedite Software Modem</h3>
+        <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
+          <span class="font-semibold">Pros:</span>
+          <ul class="text-base font-light leading-relaxed list-disc pl-6 h-full">
+            <li>Flexible and Versatile: Compatible with multiple satellite communication formats and external transceivers.</li>
+            <li>Highly integrated: REST API allows easy integration with ground networks and control software.</li>
+            <li>Cost-effective: Software-based solution that doesn't require physical hardware.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="text-lg font-sans font-light ">
+        <h3 class=" text-center light-box-shadow mb-5 py-2 rounded-[50px]">Expedite Turnkey Ground Station</h3>
+        <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
+          <span class="font-semibold">Pros:</span>
+          <ul class="text-base font-light leading-relaxed list-disc pl-6 h-full">
+            <li>Complete Package: Includes antennas, transceivers, and sequencer for a full, plug-and-play ground station.</li>
+            <li>Adaptable: Supports multiple bands (UHF, VHF, S-band) for a wide range of mission needs.</li>
+            <li>Automated Operations: Features like Doppler correction and mission scheduling make it easy to operate.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="text-lg font-sans font-light ">
+        <h3 class=" text-center mb-5 light-box-shadow py-2 rounded-[50px]">Expedite Sequencer</h3>
+        <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
+         <span class="font-semibold">Pros:</span>
+          <ul class="text-base font-light leading-relaxed list-disc pl-6 h-full">
+            <li>Precise Signal Management: Controls transmission timing and power for efficient operations.</li>
+            <li>Remote Control: Can be managed automatically or remotely, reducing the need for on-site supervision.</li>
+            <li>Diagnostic Tools: Real-time monitoring with a built-in display and advanced sensor data.</li>
+          </ul>
+       </div>
+
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <p class="text-lg font-light mb-6">Make an enquiry and we'll get back to you.</p>
+      <button class=" text-black px-6 py-2 rounded-[50px] light-box-shadow">
+        Make enquiry
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+  {% endblock %}
+
+{% block page-based-js %}
+<script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
+
+
+{% endblock %}
