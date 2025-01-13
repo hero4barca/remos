@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true, // Ensures Tailwind's utilities take precedence
   content: [
     './**/templates/*.html',
     './project/templates/**/*.html',

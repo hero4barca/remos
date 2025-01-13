@@ -10,6 +10,7 @@
   {% endblock %}
 
   {% block page %}
+  <!-- Team and Board section-->
   <section class="bg-[#0C0F22] text-white py-16 px-8">
     <div class="max-w-7xl mx-auto">
       <!-- About Management Team -->
@@ -31,7 +32,7 @@
             <div class="flex flex-col text-right order-1 mr-8">
                 <p class="font-sans font-lg font-bold">CEO</p>
               <h3 class="text-2xl font-light  font-serif">Moses Browne Mwakyanjala (PhD)</h3>
-              <a href="mailto:moses.email@example.com" class="text-lg font-serif font-light text-white">moses.email@example.com</a>
+              <a href="mailto:moses.email@example.com" class="text-lg font-serif font-light text-white">moses.browne.mwakyanjala@remosspace.com</a>
               <p class="text-lg font-sans font-light">+46 70-28 21 74</p>
             </div>
             <!-- Image Section -->
@@ -46,7 +47,7 @@
             <div class="flex flex-col text-left order-2 ml-8">
             <p class="font-sans font-lg font-bold">COO</p>
               <h3 class="text-2xl font-light  font-serif">Petter Lindberg</h3>
-              <a href="mailto:petter.email@example.com" class="text-lg font-serif font-light text-white">petter.email@example.com</a>
+              <a href="mailto:petter.email@example.com" class="text-lg font-serif font-light text-white">petter.lindberg@remosspace.com</a>
               <p class="text-lg font-sans font-light">+00-011 22 33</p>
             </div>
             <!-- Image Section -->
@@ -61,7 +62,7 @@
             <div class="flex flex-col text-right order-1 mr-8">
                 <p class="font-sans font-lg font-bold">CSO</p>
               <h3 class="text-2xl font-light font-serif">Thilini Wijewarna Arachchi</h3>
-              <a href="mailto:thilini.email@example.com" class="text-lg font-serif font-light text-white"">thilini.email@example.com</a>
+              <a href="mailto:thilini.email@example.com" class="text-lg font-serif font-light text-white"">thilini.w@remosspace.com</a>
               <p class="text-lg font-sans font-light">+46 76 581 56 80</p>
             </div>
             <!-- Image Section -->
@@ -130,10 +131,65 @@
     </div>
   </section>
 
+  <!-- Map Section -->
+  <section id="partners" class="bg-white pt-6 pb-4">
+    <div class="w-[80%] mx-auto ">
+        <h2 class="font-serif text-[#0C0F22] font-normal text-3xl ">Our Partners</h2>
+    </div>
+    <!-- logo carousel-->
+    <div class="bg-white py-2">
+      <div class="swiper-container max-w-full mx-auto">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/ab.png' %}" alt="Artic Business" class="max-h-24 object-contain">
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/almi.png' %}" alt="Almi Invest" class="max-h-24 object-contain">
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/cassani.png' %}" alt="Cassani Business Accelerator" class="max-h-24 object-contain">
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/esa.png' %}" alt="ESA" class="max-h-24 object-contain">
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/lunova.png' %}" alt="Lunova" class="max-h-24 object-contain">
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/nf.png' %}" alt="Norrlands Fonden" class="max-h-24 object-contain">
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <img src="{% static 'img/partners/rn.png' %}" alt="Region Norrbotten" class="max-h-24 object-contain">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   {% endblock %}
 
 {% block page-based-js %}
 <script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
+<script>
+
+    // partners slider
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        speed: 6000, // Control how fast the slider flows
+        breakpoints: {
+          640: { slidesPerView: 2 }, // For screens >= 640px
+          768: { slidesPerView: 3 }, // For screens >= 768px
+          1024: { slidesPerView: 5 }, // For screens >= 1024px
+        },
+      });
+    });
+</script>
 
 {% endblock %}
