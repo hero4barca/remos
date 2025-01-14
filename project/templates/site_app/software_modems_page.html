@@ -1,0 +1,159 @@
+{% extends "site_app/base.html" %}
+{% load static %}
+
+  {% block title %}
+    Remosspace AB | Software Modems
+  {% endblock %}
+
+  {% block page_based_head_includes %}
+  <link rel="stylesheet" href="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  {% endblock %}
+
+  {% block page %}
+
+<!-- Products-->
+<!-- Products-->
+<section class="bg-white py-12 px-6">
+<div class="max-w-5xl mx-auto h-full mt-16 grid lg:grid-cols-2 gap-8">
+    <!-- Left Text Section -->
+    <div class="flex flex-col text-center lg:text-left">
+
+    <h3 class="text-xl text-black font-serif font-light mb-3"> Expedite Series </h3>
+    <h2 class="text-3xl font-serif font-normal mb-2 text-[#0C0F22]">Software Modem</h2>
+    <p class="text-base font-sans font-semibold text-black leading-relaxed mb-2">
+        The Expedite Software Modem is a software-based communication tool for controlling and communicating with small satellites.
+    </p>
+
+    <p class="font-light text-base font-sans text-black">
+        It combines several functions into one solution: it works as a modem, controls the antenna, and
+        schedules mission tasks. This modem can handle different types of satellite communication and formats,
+        making it compatible with a variety of satellite systems like GomSpace and Satlab. It has a user-friendly interface, advanced diagnostic tools, and can be controlled via a REST API,
+        allowing easy integration with other software and automation of routine operations.
+    </p>
+
+    <div class="flex items-center justify-between mt-7">
+        <button class="text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans light-box-shadow">
+        Make Enquiry
+        </button>
+        <a href="#" class="text-blue-500 text-lg font-sans font-medium underline">
+        Get brochure &gt;
+        </a>
+    </div>
+    </div>
+
+    <!-- Right Image Section -->
+    <div class="flex flex-col h-full">
+    <div class="text-center mt-4 mb-5">
+        <p class="font-sans font-light font-base">Is available as a web app and as well as a full modem system.</p>
+    </div>
+    <div class="image-container flex-grow grid grid-cols-2 gap-5 py-6">
+        <div class="rounded-[71px] light-box-shadow flex justify-center p-2 items-center h-full">
+        <img src="{% static 'img/router.png' %}" alt="Expedite product" class="object-contain  w-auto">
+        </div>
+        <div class="rounded-[71px] light-box-shadow flex justify-center  p-2 items-center h-full">
+        <img src="{% static 'img/router.png' %}" alt="Expedite product" class="object-contain  w-auto">
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+<section class="bg-[#0C0F22] w-[100%] text-white py-8 ">
+    <div class="container mx-auto max-w-full">
+      <!-- Item 1 -->
+      <div x-data="{ open: false }" class="border-y w-[100%] border-[#2BA9F0] ">
+        <div
+          @click="open = !open"
+          class="flex justify-between items-center p-4 px-[18%] bg-[#0C0F22] cursor-pointer">
+          <span class="font-semibold">Key Features</span>
+          <span x-text="open ? '-' : '+'"></span>
+        </div>
+        <div x-show="open" class="p-4 px-[12%] bg-[#0C0F22] border-b border-[#2BA9F0] " x-transition>
+            <div class="lg:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-8 lg:w-[50%">
+                <!-- Column 1 -->
+                <div class="space-y-4">
+                  <p><strong>Advanced Modem:</strong> Supports burst-mode and stream-based communications for small satellites.</p>
+                  <p><strong>Data Rate:</strong> Ranges from as low as 100 bps to 1 Mbps (10 Mbps in 2025).</p>
+                  <p><strong>Frequency:</strong> Up to 6 GHz.</p>
+                  <p><strong>Packet Formats:</strong> AX.25, all GomSpace modes, SPS-3 modes.</p>
+                  <p><strong>Automatic Doppler Correction</strong></p>
+                  <p><strong>Line Coding:</strong> NRZ-L/M/S, Bi-Phase (Manchester/L-M/S).</p>
+                  <p><strong>Scrambler:</strong> G3RUH, CCSDS.</p>
+                  <p><strong>Transmission Procedure:</strong> Open-loop CCSDS Physical Layers Operations Procedures (PLOP-1).</p>
+                </div>
+                <!-- Column 2 -->
+                <div class="space-y-4">
+                  <p><strong>External Reference:</strong> Supports 10 MHz and 1 PPS synchronization.</p>
+                  <p><strong>Advanced Frequency Sweeping:</strong> Suitable for deep-space missions.</p>
+                  <p><strong>Automatic Sequencer:</strong> Manages half-duplex communication and HPA enabling.</p>
+                  <p><strong>Automatic Pass Scheduler and Antenna Instrumentation</strong></p>
+                  <p><strong>Support for Various Positioners:</strong> Including SPID, M2, Yaesu, Proscan, WinRotor, RotCtL.</p>
+                  <p><strong>Intuitive Desktop GUI and WebApp</strong></p>
+                </div>
+              </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="border-b bg-[#0C0F22]  w-[100%] border-[#2BA9F0] " >
+        <div class="flex justify-between items-center p-4 px-[18%] bg-[#0C0F22] cursor-pointer">
+            <span class="font-semibold">REST API for Control</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="border-b bg-[#0C0F22] w-[100%]  border-[#2BA9F0] " >
+        <div class="flex justify-between items-center p-4 px-[18%] bg-[#0C0F22] cursor-pointer">
+            <span class="font-semibold">TCP/IP for Real-time Data Transfer</span>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div x-data="{ open: false }" class="border-b w-[100%] border-[#2BA9F0] bg-[#0C0F22] ">
+        <div
+          @click="open = !open"
+          class="flex justify-between items-center p-4 px-[18%] bg-[#0C0F22] cursor-pointer">
+          <span class="font-semibold">Specs</span>
+          <span x-text="open ? '-' : '+'"></span>
+        </div>
+        <div x-show="open" class="p-4 px-[12%] bg-[#0C0F22]" x-transition>
+          <p class="">Specifications content goes here. Add details as necessary.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Reach Out section -->
+<section class="bg-[#0C0F22] py-12">
+  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-14 px-4">
+    <!-- Image -->
+    <div class="flex-shrink-0">
+      <img
+        src="{% static 'img/team/petter.png' %}"
+        alt="Petter Lindberg"
+        class="rounded-[40%] grayscale w-48 max-h-34 object-cover"
+      />
+    </div>
+    <!-- Content -->
+    <div class="text-white text-center lg:text-left">
+      <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-5">Want to know more about our products?</p>
+      <p class="font-bold text-lg mb-4">Reach out to</p>
+      <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-2">Petter Lindberg</p>
+      <a href="mailto:petter.lindberg@mosspace.com" class=" underline text-lg">
+        petter.lindberg@mosspace.com
+      </a>
+      <p class="text-blue-400 text-lg mt-2">+46 10-278 21 74</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block page-based-js %}
+<script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
+
+
+{% endblock %}
