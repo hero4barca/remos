@@ -39,3 +39,10 @@ class ContactPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('header_message'),
     ]
+
+class BlogPage(Page):
+    header_message = models.CharField(max_length=250)
+
+    content_panels = Page.content_panels + [
+        FieldPanel('header_message'),
+    ]

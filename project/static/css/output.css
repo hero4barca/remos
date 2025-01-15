@@ -1328,6 +1328,10 @@ video {
   width: 3.5rem !important;
 }
 
+.w-\[65\%\] {
+  width: 65% !important;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content !important;
   min-width: fit-content !important;
@@ -1899,6 +1903,10 @@ video {
   padding-top: 2.25rem !important;
 }
 
+.pt-3 {
+  padding-top: 0.75rem !important;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -2254,8 +2262,16 @@ video {
     width: 90% !important;
   }
 
+  .lg\:w-\[65\%\] {
+    width: 65% !important;
+  }
+
   .lg\:min-w-\[368px\] {
     min-width: 368px !important;
+  }
+
+  .lg\:max-w-\[50\%\] {
+    max-width: 50% !important;
   }
 
   .lg\:flex-shrink-0 {
