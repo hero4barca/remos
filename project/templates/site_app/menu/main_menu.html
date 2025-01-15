@@ -1,0 +1,17 @@
+
+<!-- Navigation Section -->
+      <nav class="flex items-center gap-16 lg:mr-8">
+        <a href="/" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Home</a>
+
+          {% for item in menu_items %}
+            {% if forloop.last and menu_items|length > 1 %}
+                <a href="{{ item.href }}" class="text-blue-500  px-12 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
+                    {{ item.text }}
+                </a>
+            {% else %}
+                <a href="{{ item.href }}" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">
+                    {{ item.text }}
+                </a>
+            {% endif %}
+          {% endfor %}
+      </nav>

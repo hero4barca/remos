@@ -24,8 +24,12 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Application definition
 
 INSTALLED_APPS = [
+
+    "wagtail_modeladmin",
+    "wagtailmenus",
     "site_app",
-    # "home",
+
+    # wagtail default
     "search",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
@@ -74,6 +78,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'wagtailmenus.context_processors.wagtailmenus', # wagtail menu
             ],
         },
     },

@@ -1,0 +1,89 @@
+{% extends "site_app/base.html" %}
+{% load static %}
+
+{% block title %}
+  Remosspace AB | Contact
+{% endblock %}
+
+{% block page_based_head_includes %}
+<link rel="stylesheet" href="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.css' %}">
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+{% endblock %}
+
+{% block page %}
+<!-- contact section -->
+<section class="bg-white text-gray-900 py-9">
+  <div class="container mx-auto max-w-5xl  mt-16 mb-3">
+    <h2 class="font-serif font-normal text-3xl text-[#0C0F22]">Contact</h2>
+    <h3> Reach Out </h3>
+  </div>
+  <div class="container mx-auto max-w-5xl  grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+    <!-- Contact Information -->
+
+    <div class="space-y-4">
+      <div class="p-4 border rounded-lg shadow-md">
+        <p class="font-semibold">Email:</p>
+        <p>info@remosspace.com</p>
+        <p class="font-semibold">Phone:</p>
+        <p>+46 70 307 69 11</p>
+      </div>
+      <div class="p-4 border rounded-lg shadow-md">
+        <p class="font-semibold">Remos Space Systems AB</p>
+        <p>Aurorum 1C</p>
+        <p>SE-977 75 Luleå, Sweden</p>
+      </div>
+    </div>
+
+    <!-- Illustration -->
+    <div class="flex justify-center">
+      <div class="relative w-56 h-56 rounded-full bg-gray-900 flex items-center justify-center">
+        <!-- Outer Circle -->
+        <div class="absolute bg-blue-500 rounded-full w-16 h-16 top-4 right-8"></div>
+        <!-- Center Circle -->
+        <div class="absolute bg-blue-400 rounded-full w-10 h-10"></div>
+        <!-- Inner Dots -->
+        <div class="absolute bg-blue-300 rounded-full w-6 h-6 left-10 top-10"></div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="space-y-4">
+      <input
+        type="text"
+        placeholder="Name"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+      />
+      <input
+        type="text"
+        placeholder="Phone number (Optional)"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+      />
+      <select
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+      >
+        <option>What's on your mind?</option>
+        <option>Inquiry</option>
+        <option>Support</option>
+        <option>Feedback</option>
+      </select>
+      <textarea
+        placeholder="Message..."
+        rows="4"
+        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+      ></textarea>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
+
+{% block page-based-js %}
+<script src="{% static 'vendors/swiper-11.2.0/swiper-bundle.min.js' %}" defer></script>
+
+{% endblock %}
