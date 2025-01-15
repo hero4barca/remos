@@ -17,54 +17,65 @@
     <h2 class="font-serif font-normal text-3xl text-[#0C0F22]">Contact</h2>
     <h3> Reach Out </h3>
   </div>
-  <div class="container mx-auto max-w-5xl  grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+  <div class="container mx-auto max-w-5xl  grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
     <!-- Contact Information -->
 
-    <div class="space-y-4">
-      <div class="p-4 border rounded-lg shadow-md">
-        <p class="font-semibold">Email:</p>
-        <p>info@remosspace.com</p>
-        <p class="font-semibold">Phone:</p>
-        <p>+46 70 307 69 11</p>
+    <div class="space-y-8 font-sans text-[#0C0F22]">
+      <div class="p-8 light-box-shadow  rounded-[41px] flex-shrink-0">
+        <p class="font-bold text-lg ml-2">Email:</p>
+        <p class="font-light text-[1.7rem] leading-8">info@remosspace.com</p>
+        <p class="font-bold text-lg mt-5 ml-3">Phone:</p>
+        <p class="font-light text-[1.7rem] leading-8">+46 70 307 69 11</p>
       </div>
-      <div class="p-4 border rounded-lg shadow-md">
-        <p class="font-semibold">Remos Space Systems AB</p>
-        <p>Aurorum 1C</p>
-        <p>SE-977 75 Luleå, Sweden</p>
+      <div class="mt-10 p-8 light-box-shadow  rounded-[41px] flex-shrink-0">
+        <p class="font-bold text-lg">Remos Space Systems AB</p>
+        <div class="mt-4 block font-light text-[1.7rem] leading-8">
+          <p>Aurorum 1C</p>
+          <p>SE-977 75 Luleå,</p>
+          <p> Sweden</p>
+        </div>
+
       </div>
     </div>
+
 
     <!-- Illustration -->
-    <div class="flex justify-center">
-      <div class="relative w-56 h-56 rounded-full bg-gray-900 flex items-center justify-center">
-        <!-- Outer Circle -->
-        <div class="absolute bg-blue-500 rounded-full w-16 h-16 top-4 right-8"></div>
-        <!-- Center Circle -->
-        <div class="absolute bg-blue-400 rounded-full w-10 h-10"></div>
-        <!-- Inner Dots -->
-        <div class="absolute bg-blue-300 rounded-full w-6 h-6 left-10 top-10"></div>
-      </div>
-    </div>
+  <div class="flex justify-center flex-shrink-0 items-center relative w-96 h-96">
+    <!-- Dark Circle (lowest z-index) -->
+    <div class="absolute bg-gray-900 rounded-full w-56 h-56 z-0"></div>
+
+    <!-- Concentric Circles -->
+    <div class="absolute border border-blue-500 rounded-full w-56 h-56 z-10" style="right: 28%;"></div>
+    <div class="absolute border border-blue-500 rounded-full w-28 h-28 z-10" style="right: 28%;"></div>
+
+    <!-- Orbiting Circles -->
+    <div class="absolute bg-[#2BA9F0] rounded-full w-4 h-4 z-20" style="top: 47%; right: 33%;"></div>
+    <div class="absolute bg-[#2BA9F0] rounded-full w-6 h-6 z-30" style="top: 49%; right: 40%;"></div>
+    <div class="absolute bg-[#2BA9F0] rounded-full w-10 h-10 z-30" style="top: 56%; right: 47%;"></div>
+    <div class="absolute bg-[#2BA9F0] rounded-full w-14 h-14 z-40" style="top: 68%; right: 53%;"></div>
+
+  </div>
+
 
     <!-- Contact Form -->
-    <div class="space-y-4">
+    <div class="space-y-4  px-7 pb-16 pt-9 rounded-[51px]  light-box-shadow">
       <input
         type="text"
         placeholder="Name"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+        class="w-full p-3 border border-[#2BA9F0] rounded-[20px]  focus-visible:outline-1 focus-visible:outline-[#2BA9F0]"
       />
       <input
         type="email"
         placeholder="Email"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+        class="w-full p-3 border border-[#2BA9F0] rounded-[20px]  focus-visible:outline-1 focus-visible:outline-[#2BA9F0]"
       />
       <input
         type="text"
         placeholder="Phone number (Optional)"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+        class="w-full p-3 border border-[#2BA9F0] rounded-[20px]  focus-visible:outline-1 focus-visible:outline-[#2BA9F0]"
       />
       <select
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+        class="w-full p-3 border text-gray-600 border-[#2BA9F0] rounded-[20px]  focus-visible:outline-1 focus-visible:outline-[#2BA9F0]"
       >
         <option>What's on your mind?</option>
         <option>Inquiry</option>
@@ -74,7 +85,7 @@
       <textarea
         placeholder="Message..."
         rows="4"
-        class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-500"
+        class="w-full p-3 border border-[#2BA9F0] rounded-[20px]  focus-visible:outline-1 focus-visible:outline-[#2BA9F0]"
       ></textarea>
     </div>
   </div>
