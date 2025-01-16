@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.exceptions import ValidationError
+import datetime
 
 from wagtail.models import Page
 from wagtail.admin.panels import FieldPanel
@@ -68,6 +69,8 @@ class PodcastEpisodePage(Page):
         help_text="Thumbnail image of the episode. Recommended dimension: 1140x570 pixels "
     )
 
+    date = models.DateField(auto_now_add=True)
+
 
     content_panels = Page.content_panels + [
         FieldPanel('header_message'),
@@ -75,6 +78,7 @@ class PodcastEpisodePage(Page):
         FieldPanel('episode_subtitle'),
         FieldPanel('episode_description'),
         FieldPanel('episode_thumbnail_img'),
+
     ]
 
     def clean(self):
