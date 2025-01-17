@@ -24,6 +24,18 @@
     margin-top: 85px;
 }
 
+.news-article-container a {
+    text-decoration: underline ;
+    color: #2BA9F0 ;
+}
+
+.media-wrapper-div > div >iframe {
+    margin-left: auto ;
+    margin-right: auto ;
+    border: 5px solid #2BA9F0;
+    border-radius: 8px;
+}
+
 /** Swiper */
 .swiper-slide {
     transform: translate3d(0, 0, 0); /* Forces GPU acceleration */

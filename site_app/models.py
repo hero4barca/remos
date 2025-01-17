@@ -94,7 +94,7 @@ class PodcastEpisodePage(Page):
 
 class ImageTextBlock(StructBlock):
     text = RichTextBlock(required=True, help_text="Add the text for this section")
-    image = ImageChooserBlock(required=True, help_text="Choose an image for this section")
+    image = ImageBlock(required=True, help_text="Choose an image for this section")
     text_on_left = BooleanBlock(
         required=False,
         default=True,
@@ -105,6 +105,29 @@ class ImageTextBlock(StructBlock):
         template = "site_app/blocks/image_text_block.html"  # Template to render this block
         icon = "image"  # Wagtail editor icon
 
+
+class TwoImagesBlock(StructBlock):
+    image_1 = ImageBlock(required=True, help_text="Choose an image for this section")
+    image_2 = ImageBlock(required=True, help_text="Choose an image for this section")
+    class Meta:
+        template = "site_app/blocks/two_images_block.html"  # Template to render this block
+        icon = "image"  # Wagtail editor icon
+
+class EmbedTextBlock(StructBlock):
+    text = RichTextBlock(required=True, help_text="Add the text for this section")
+    media = EmbedBlock(max_width=500,
+                        max_height=300,
+                        max_length=200,
+                        required=True, help_text="Enter url for embeded media")
+    text_on_left = BooleanBlock(
+        required=False,
+        default=True,
+        help_text="Check this box to position the text on the left and the image on the right. Uncheck to reverse."
+    )
+
+    class Meta:
+        template = "site_app/blocks/media_text_block.html"  # Template to render this block
+        icon = "image"  # Wagtail editor icon
 
 
 class NewsArticlePage(Page):
@@ -127,18 +150,22 @@ class NewsArticlePage(Page):
     date = models.DateField(auto_now_add=True)
     article_body = StreamField(
         [
-            ('paragraph', RichTextBlock()),
-            ('h1', CharBlock(max_length=200, help_text="level 1 headings" )),
-            ('h2', CharBlock( max_length=200, help_text="level 2 headings")),
-            ('image', ImageBlock()),
-            ('embeded_media', EmbedBlock() ),
-            ('url', URLBlock() ),
-            ('paragraph_with_image', ImageTextBlock())
+            ('paragraph', RichTextBlock(template='site_app/blocks/paragraph.html')),
+            ('h2', CharBlock(max_length=200, help_text="level 2 headings",  template='site_app/blocks/two_headings.html'  )),
+            ('h3', CharBlock( max_length=200, help_text="level 3 headings",  template='site_app/blocks/three_headings.html' )),
+            ('image', ImageBlock(template='site_app/blocks/image_full.html' )),
+            ('embeded_media', EmbedBlock(
+                max_width=700, max_height=400, max_length=200,
+                help_text="embed media files like videos, social media posts/shares etc.",
+                template='site_app/blocks/embed_media.html') ),
+            ('paragraph_beside_image', ImageTextBlock( help_text="image beside paragraph")),
+            ('two_images', TwoImagesBlock(help_text="two images side by side")),
+            ('paragraph_beside_media', EmbedTextBlock(help_text="paragraph beside embeded media") ),
 
         ],
         block_counts={
             'paragraph': {'min_num': 1},
-            'h1': {'max_num': 3},
+            'h2': {'max_num': 3},
         },
         use_json_field=True,
         blank=True,
@@ -157,6 +184,5 @@ class NewsArticlePage(Page):
 
     def clean(self):
         super().clean()
-
         if self.article_thumbnail_img == None:
             raise ValidationError("thumbnail image is required")
