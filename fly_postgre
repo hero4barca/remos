@@ -1,0 +1,8 @@
+Postgres cluster bold-hill-4593 created
+  Username:    postgres
+  Password:    tj0jw8KRwpiZCt3
+  Hostname:    bold-hill-4593.internal
+  Flycast:     fdaa:8:1453:0:1::2
+  Proxy port:  5432
+  Postgres port:  5433
+  Connection string: postgres://postgres:tj0jw8KRwpiZCt3@bold-hill-4593.flycast:5432
