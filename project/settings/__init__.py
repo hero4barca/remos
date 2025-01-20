@@ -1,5 +1,10 @@
 import os
 import sys
+from django.conf import settings
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Get the "env" variable from the environment, default to "dev"
 env = os.getenv('env', 'dev').lower()

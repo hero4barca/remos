@@ -31,6 +31,9 @@ RUN pip install "gunicorn==20.0.4"
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
+# Install psycopg3 for PostgreSQL support.
+RUN pip install psycopg
+
 # Use /app folder as a directory where the source code is stored.
 WORKDIR /app
 

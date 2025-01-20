@@ -1,4 +1,9 @@
 from .base import *
+from django.conf import settings
+
+
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 import dj_database_url # postgre db_url
