@@ -14,7 +14,7 @@
       <section class="relative bg-cover bg-center text-white text-center"
               style="background-image: url('{% static "img/hero-image.png" %}'); background-size: cover; background-repeat: no-repeat; aspect-ratio: 16 / 8;">
         <div class="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 class="text-white text-center font-serif text-6xl font-normal leading-normal">
+          <h1 class="text-white text-center font-serif text-[3rem] mdTo1160:text-[2.5rem] font-normal leading-normal">
             The link between earth and space.
           </h1>
         </div>
@@ -291,7 +291,7 @@
 
       <!-- Customer installations -->
       <section class="bg-white py-16 mx-3">
-        <div class="lg:w-[90%] min-h-fit mx-auto px-6 relative ">
+        <div class="lg:w-[90%] min-h-fit mx-auto px-2 relative ">
           <!-- Section Title -->
           <h2 class="text-4xl font-serif font-light text-gray-900 mb-10">Customer Installations</h2>
 
@@ -474,6 +474,14 @@
           spaceBetween: 16,
         },
         1024: {
+          slidesPerView: 2, // Show 3.5 slides on large screens
+          spaceBetween: 20,
+        },
+        1160: {
+          slidesPerView: 3.5, // Show 3.5 slides on large screens
+          spaceBetween: 24,
+        },
+        1400: {
           slidesPerView: 4, // Show 3.5 slides on large screens
           spaceBetween: 24,
         },
