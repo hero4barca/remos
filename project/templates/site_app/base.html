@@ -21,22 +21,13 @@
 <body class="font-sans">
 
   <!-- Floating Navbar -->
-  <div class="absolute top-5 left-1/2 transform -translate-x-1/2 lg:w-[80%] lg:flex-shrink-0 flex items-center justify-between h-[66px] bg-white backdrop-blur-md px-8 py-3 rounded-full nav-shadow z-10">
+  <div class="absolute top-5 left-1/2 transform -translate-x-1/2 md-w-[90%] lg:w-[85%] lg:flex-shrink-0 flex items-center justify-between h-[66px] bg-white backdrop-blur-md md:px-6 lg:px-8 py-3 rounded-full nav-shadow z-10">
       <!-- Logo Section -->
       <div class="flex items-center">
           <img src="{% static 'img/logo.png' %}" alt="Remos Logo" class="h-10" />
       </div>
 
       <!-- Navigation Section -->
-      <!-- <nav class="flex items-center gap-16 lg:mr-8">
-          <a href="#home" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Home</a>
-          <a href="#about" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">About</a>
-          <a href="#news" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">News</a>
-          <a href="#contact" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">Contact</a>
-          <a href="#products" class="text-blue-500  px-12 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
-              Products
-          </a>
-      </nav> -->
       {% main_menu template="site_app/menu/main_menu.html" %}
   </div>
 
