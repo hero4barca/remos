@@ -2365,6 +2365,22 @@ video {
     width: 85% !important;
   }
 
+  .mdTo1160\:w-\[80\%\] {
+    width: 80% !important;
+  }
+
+  .mdTo1160\:w-\[75\%\] {
+    width: 75% !important;
+  }
+
+  .mdTo1160\:max-w-\[48\%\] {
+    max-width: 48% !important;
+  }
+
+  .mdTo1160\:max-w-\[50\%\] {
+    max-width: 50% !important;
+  }
+
   .mdTo1160\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
@@ -2395,6 +2411,14 @@ video {
 
   .mdTo1160\:rounded-\[35px\] {
     border-radius: 35px !important;
+  }
+
+  .mdTo1160\:rounded-\[71px\] {
+    border-radius: 71px !important;
+  }
+
+  .mdTo1160\:rounded-\[68px\] {
+    border-radius: 68px !important;
   }
 
   .mdTo1160\:p-5 {
