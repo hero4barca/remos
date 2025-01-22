@@ -11,19 +11,19 @@
 
 {% block page %}
 <section class="bg-white max-w-[90%] mx-auto py-12">
-  <div class="container mx-auto max-w-6xl mb-3 text-[#0C0F22] top-section-first-div">
+  <div class="container w-full pl-[5%] mb-3 text-[#0C0F22] top-section-first-div">
     <h2 class="font-serif font-normal text-4xl ">Podcast</h2>
   </div>
-  <div class=" w-full border-b border-[#2BA9F0] pb-6">
-    <div class="flex flex-row lg:w-[70%] mx-auto">
-      <div class="">
-        <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-64 h-auto lg:min-w-[368px]">
+
+  <div class="w-full border-b border-[#2BA9F0] pb-6">
+    <div class="flex flex-row lg:gap-9 max-w-7xl mx-auto justify-center items-center">
+      <div>
+        <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-72 h-auto lg:min-w-[368px]">
       </div>
 
-      <div class=" lg:max-w-[50%]">
-        <p class="mb-4">Listen to our podast - <b>Space to Ground.</b></p>
-
-        <p>This podcast is meant to drive more <b>awareness</b>, explore the <b>latest technologies</b>, and <b>help the industry navigate collaborative opportunities</b>. </p>
+      <div class="max-w-[38%]">
+        <p class="mb-4">Listen to our podcast - <b>Space to Ground.</b></p>
+        <p>This podcast is meant to drive more <b>awareness</b>, explore the <b>latest technologies</b>, and <b>help the industry navigate collaborative opportunities</b>.</p>
       </div>
     </div>
   </div>
@@ -31,8 +31,8 @@
   <!-- podcast Cards -->
   <div class=" grid grid-cols-1 lg:grid-cols-4 gap-0 mt-6  ">
     <!-- Card 1 -->
-    <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
-      <div class="h-52 w-52 rounded-[45px] bg-cover bg-center mx-auto"
+    <div class="p-9 lgTo1160:p-6 border-r border-[#2BA9F0] flex flex-col">
+      <div class="h-52 w-52 lgTo1160:h-44 lgTo1160:w-44 rounded-[45px] bg-cover bg-center mx-auto"
         style="background-image: url('{% static "img/pod1.png" %}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
       </div>
       <div class="text-[#0C0F22] mt-4 text-sm mx-auto ">
@@ -41,8 +41,8 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
-      <div class="h-52 w-52 rounded-[45px] bg-cover bg-center mx-auto"
+    <div class="p-9 lgTo1160:p-6 border-r border-[#2BA9F0] flex flex-col">
+      <div class="h-52 w-52 lgTo1160:h-44 lgTo1160:w-44 rounded-[45px] bg-cover bg-center mx-auto"
         style=" background-image: url('{% static "img/pod2.png" %}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
       </div>
       <div class="text-[#0C0F22] mt-4 text-sm mx-auto">
@@ -51,8 +51,8 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
-      <div class="h-52 w-52 rounded-[45px] bg-cover bg-center mx-auto"
+    <div class="p-9 lgTo1160:p-6 border-r border-[#2BA9F0] flex flex-col">
+      <div class="h-52 w-52 lgTo1160:h-44 lgTo1160:w-44 rounded-[45px] bg-cover bg-center mx-auto"
         style="background-image: url('{% static "img/pod1.png" %}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
       </div>
       <div class="text-[#0C0F22] mt-4 text-sm mx-auto">
@@ -61,8 +61,8 @@
     </div>
 
     <!-- Card 4 -->
-    <div class="p-9  flex flex-col">
-      <div class="h-52 w-52 rounded-[45px] bg-cover bg-center mx-auto"
+    <div class="p-9 lgTo1160:p-6 flex flex-col">
+      <div class="h-52 w-52 lgTo1160:h-44 lgTo1160:w-44 rounded-[45px] bg-cover bg-center mx-auto"
         style=" background-image: url('{% static "img/pod2.png" %}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
       </div>
       <div class="text-[#0C0F22] mt-4 text-sm mx-auto">
@@ -128,7 +128,7 @@
     </div>
 
     <!-- Podcast Section -->
-    <div class="flex flex-col lg:flex-row items-center justify-between  w-[70%]">
+    <div class="flex flex-col lg:flex-row items-center justify-between lg:w-[70%] lgTo1160:w-[90%]">
       <!-- Podcast Info -->
       <div class="bg-[#0C0F22] dark-box-shadow rounded-[81px] p-8 flex-1 max-w-[45%] ">
         <h3 class="text-white text-4xl font-serif mb-4">Podcast</h3>
