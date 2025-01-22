@@ -16,58 +16,59 @@
       <!-- About Management Team -->
       <div class="relative">
         <div class="lg:ml-[170px] text-left mb-0 mt-14">
-          <h2 class="text-4xl text-white font-serif  font-normal leading-normal -mb-2">About</h2>
+          <h2 class="text-4xl text-white font-serif font-normal leading-normal -mb-2">About</h2>
           <span class="text-2xl font-serif leading-normal font-light">Management Team</span>
         </div>
 
-        <div class="relative flex justify-center gap-12 mb-8  h-[680px]">
-             <!-- Decorative Rounded Rectangles -->
-             <div class="absolute w-[120px] h-[291px] bg-white rounded-[72px] top-[21%] left-[41%] z-1"></div>
-             <div class="absolute w-[126px] h-[260px] bg-white rounded-[72px] top-[8%] right-[39%] z-1"></div>
-             <div class="absolute w-[147px] h-[306px] border-2 border-[#2BA9F0] rounded-[93px] top-[13%] left-[45%] z-5"></div>
+        <!-- Management Team Layout -->
+        <div class="relative flex flex-wrap justify-center gap-12 mb-8 h-auto lg:h-[680px]">
+          <!-- Decorative Rounded Rectangles -->
+          <div class="hidden lg:block absolute lg:w-[120px] lg:h-[291px] lgTo1220:w-[96px] lgTo1220:h-[233px] bg-white rounded-[72px] top-[21%] left-[41%] lgTo1220:left-[40%] z-1"></div>
+          <div class="hidden lg:block absolute lg:w-[126px] lg:h-[260px] lgTo1220:w-[101px] lgTo1220:h-[208px] bg-white rounded-[72px] top-[8%] right-[39%] lgTo1220:right-[37%] z-1"></div>
+          <div class="hidden lg:block absolute lg:w-[147px] lg:h-[306px] lgTo1220:w-[118px] lgTo1220:h-[245px] border-2 border-[#2BA9F0] rounded-[93px] top-[13%] left-[45%] z-5"></div>
 
           <!-- CEO -->
-          <div class="flex flex-row items-center absolute top-3 left-[3%] z-10 flex-shrink-0">
+          <div class="flex flex-col lg:flex-row items-center lg:absolute lg:top-3 lg:left-[3%] lgTo1220:left-[2%] z-10">
             <!-- Details Section -->
-            <div class="flex flex-col text-right order-1 mr-8">
-                <p class="font-sans font-lg font-bold">CEO</p>
-              <h3 class="text-2xl font-light  font-serif">Moses Browne Mwakyanjala (PhD)</h3>
-              <a href="mailto:moses.email@example.com" class="text-lg font-serif font-light text-white">moses.browne.mwakyanjala@remosspace.com</a>
+            <div class="text-center lg:text-right lg:order-1 lg:mr-8 lgTo1220:mr-4">
+              <p class="font-sans font-lg font-bold">CEO</p>
+              <h3 class="lg:text-2xl lgTo1325:text-xl font-light font-serif">Moses Browne Mwakyanjala (PhD)</h3>
+              <a href="mailto:moses.email@example.com" class="lg:text-lg lgTo1325:text-base font-serif font-light text-white">moses.browne.mwakyanjala@remosspace.com</a>
               <p class="text-lg font-sans font-light">+46 70-28 21 74</p>
             </div>
             <!-- Image Section -->
-            <div class="relative w-[183px] h-[275px] flex-shrink-0 order-2">
+            <div class="relative lg:w-[183px] lg:h-[275px] lgTo1220:w-[137px] lgTo1220:h-[206px] flex-shrink-0 lg:order-2">
               <img src="{% static 'img/team/moses.png' %}" alt="CEO Image" class="rounded-full object-cover w-full h-full" />
             </div>
           </div>
 
           <!-- COO -->
-          <div class="flex flex-row items-center absolute top-[17%] right-[9%] z-10 flex-shrink-0">
+          <div class="flex flex-col lg:flex-row items-center lg:absolute lg:top-[17%] lg:right-[9%] lgTo1220:right-[4%] z-10">
             <!-- Details Section -->
-            <div class="flex flex-col text-left order-2 ml-8">
-            <p class="font-sans font-lg font-bold">COO</p>
-              <h3 class="text-2xl font-light  font-serif">Petter Lindberg</h3>
-              <a href="mailto:petter.email@example.com" class="text-lg font-serif font-light text-white">petter.lindberg@remosspace.com</a>
+            <div class="text-center lg:text-left lg:order-2 lg:ml-8 lgTo1220:ml-4">
+              <p class="font-sans font-lg font-bold">COO</p>
+              <h3 class="text-2xl lgTo1325:text-xl font-light font-serif">Petter Lindberg</h3>
+              <a href="mailto:petter.email@example.com" class="text-lg lgTo1325:text-base font-serif font-light text-white">petter.lindberg@remosspace.com</a>
               <p class="text-lg font-sans font-light">+00-011 22 33</p>
             </div>
             <!-- Image Section -->
-            <div class="relative w-[183px] h-[275px] flex-shrink-0 order-1">
+            <div class="relative lg:w-[183px] lg:h-[275px] lgTo1220:w-[137px] lgTo1220:h-[206px] flex-shrink-0 lg:order-1">
               <img src="{% static 'img/team/petter.png' %}" alt="COO Image" class="rounded-full object-cover w-full h-full" />
             </div>
           </div>
 
           <!-- CSO -->
-          <div class="flex flex-row items-center absolute bottom-[12%] left-[15%] z-10 flex-shrink-0">
+          <div class="flex flex-col lg:flex-row items-center lg:absolute lg:bottom-[14%] lg:left-[15%] lgTo1220:bottom-[24%] lgTo1220:left-[16%] z-10">
             <!-- Details Section -->
-            <div class="flex flex-col text-right order-1 mr-8">
-                <p class="font-sans font-lg font-bold">CSO</p>
-              <h3 class="text-2xl font-light font-serif">Thilini Wijewarna Arachchi</h3>
-              <a href="mailto:thilini.email@example.com" class="text-lg font-serif font-light text-white"">thilini.w@remosspace.com</a>
+            <div class="text-center lg:text-right lg:order-1 lg:mr-8 lgTo1220:mr-4">
+              <p class="font-sans font-lg font-bold">CSO</p>
+              <h3 class="text-2xl lgTo1325:text-xl font-light font-serif">Thilini Wijewarna Arachchi</h3>
+              <a href="mailto:thilini.email@example.com" class="text-lg lgTo1325:text-base font-serif font-light text-white">thilini.w@remosspace.com</a>
               <p class="text-lg font-sans font-light">+46 76 581 56 80</p>
             </div>
             <!-- Image Section -->
-            <div class="relative w-[183px] h-[275px] flex-shrink-0 order-2">
-              <img src="{% static 'img/team/thilini.png' %}" alt="CSO Image" class=" filter grayscale rounded-full object-cover w-full h-full" />
+            <div class="relative lg:w-[183px] lg:h-[275px] lgTo1220:w-[137px] lgTo1220:h-[206px] flex-shrink-0 lg:order-2">
+              <img src="{% static 'img/team/thilini.png' %}" alt="CSO Image" class="filter grayscale rounded-full object-cover w-full h-full" />
             </div>
           </div>
         </div>
@@ -79,57 +80,58 @@
           <h2 class="text-4xl font-normal font-serif">Our Board</h2>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-5">
+        <div class="flex flex-wrap justify-center gap-5 lgTo1160:gap-3">
           <!-- Board Member 1 -->
-          <div class="flex flex-col items-center lg:w-[215px] text-center">
+          <div class="flex flex-col items-center lg:w-[215px] lgTo1220:w-[172px] text-center">
             <div class=" mb-4">
-              <img src="{% static 'img/board/moses.png' %}" alt="Board Member" class="rounded-full object-cover w-[184px] h-[275px] " />
+              <img src="{% static 'img/board/moses.png' %}" alt="Board Member" class="rounded-full object-cover w-[184px] h-[275px] lgTo1160:w-[138px] lgTo1160:h-[206px] " />
             </div>
-            <h3 class="text-2xl font-serif font-light">Moses Browne Mwakyanjala</h3>
-            <p class="text-lg font-sans font-light">Founder of Remos</p>
+            <h3 class="text-2xl lgTo1160:text-xl font-serif font-light">Moses Browne Mwakyanjala</h3>
+            <p class="text-lg lgTo1160:text-sm font-sans font-light">Founder of Remos</p>
 
           </div>
 
           <!-- Board Member 2 -->
-          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+          <div class="flex flex-col items-center lg:w-[215px] lgTo1220:w-[172px] text-center ">
             <div class=" mb-4">
-                <img src="{% static 'img/board/christer.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px]" />
+                <img src="{% static 'img/board/christer.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px] lgTo1160:w-[138px] lgTo1160:h-[206px] " />
             </div>
-            <h3 class="text-2xl font-serif font-light">Christer Andersson</h3>
-            <p class="text-lg font-sans font-light">Earth Observation Expert</p>
+            <h3 class="text-2xl lgTo1160:text-xl font-serif font-light">Christer Andersson</h3>
+            <p class="text-lg lgTo1160:text-sm  font-sans font-light">Earth Observation Expert</p>
           </div>
 
           <!-- Board Member 3 -->
-          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+          <div class="flex flex-col items-center lg:w-[215px] lgTo1220:w-[172px] text-center ">
             <div class="mb-4">
-                <img src="{% static 'img/board/mustafa.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px]" />
+                <img src="{% static 'img/board/mustafa.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px] lgTo1160:w-[138px] lgTo1160:h-[206px] " />
             </div>
-            <h3 class="text-2xl font-serif font-light">Mustapha Elriz</h3>
-            <p class="text-lg font-sans font-light">Founder of Satosuit</p>
+            <h3 class="text-2xl lgTo1160:text-xl font-serif font-light">Mustapha Elriz</h3>
+            <p class="text-lg lgTo1160:text-sm  font-sans font-light">Founder of Satosuit</p>
           </div>
 
           <!-- Board Member 4 -->
-          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+          <div class="flex flex-col items-center lg:w-[215px] lgTo1220:w-[172px] text-center ">
             <div class=" mb-4">
-                <img src="{% static 'img/board/stefan.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px]" />
+                <img src="{% static 'img/board/stefan.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px] lgTo1160:w-[138px] lgTo1160:h-[206px]" />
             </div>
-            <h3 class="text-2xl font-serif font-light">Stefan Gardefjord</h3>
-            <p class="text-lg font-sans font-light">Former CEO of SSC</p>
+            <h3 class="text-2xl lgTo1160:text-xl font-serif font-light">Stefan Gardefjord</h3>
+            <p class="text-lg lgTo1160:text-sm font-sans font-light">Former CEO of SSC</p>
           </div>
 
           <!-- Board Member 5 -->
-          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+          <div class="flex flex-col items-center lg:w-[215px] lgTo1220:w-[172px] text-center ">
             <div class=" mb-4">
-                <img src="{% static 'img/board/markus.png' %}" alt="Board Member" class="rounded-full object-cover w-[184px] h-[275px]" />
+                <img src="{% static 'img/board/markus.png' %}" alt="Board Member" class="rounded-full object-cover w-[184px] h-[275px] lgTo1160:w-[138px] lgTo1160:h-[206px]" />
             </div>
-            <h3 class="text-2xl font-serif font-light">Markus Priman</h3>
-            <p class="text-lg font-sans font-light">Co-Founder of Nexabounds</p>
+            <h3 class="text-2xl lgTo1160:text-xl font-serif font-light">Markus Priman</h3>
+            <p class="text-lg lgTo1160:text-sm font-sans font-light">Co-Founder of Nexabounds</p>
           </div>
 
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- partners Section -->
   <section id="partners" class="bg-white pt-6 pb-4">

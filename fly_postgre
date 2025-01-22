@@ -6,3 +6,125 @@ Postgres cluster bold-hill-4593 created
   Proxy port:  5432
   Postgres port:  5433
   Connection string: postgres://postgres:tj0jw8KRwpiZCt3@bold-hill-4593.flycast:5432
+
+
+
+  <section class="bg-[#0C0F22] text-white py-16 px-8">
+    <div class="max-w-7xl mx-auto">
+      <!-- About Management Team -->
+      <div class="relative">
+        <div class="lg:ml-[170px] text-left mb-0 mt-14">
+          <h2 class="text-4xl text-white font-serif  font-normal leading-normal -mb-2">About</h2>
+          <span class="text-2xl font-serif leading-normal font-light">Management Team</span>
+        </div>
+
+        <div class="relative flex justify-center gap-12 mb-8  h-[680px]">
+             <!-- Decorative Rounded Rectangles -->
+             <div class="absolute w-[120px] h-[291px] bg-white rounded-[72px] top-[21%] left-[41%] z-1"></div>
+             <div class="absolute w-[126px] h-[260px] bg-white rounded-[72px] top-[8%] right-[39%] z-1"></div>
+             <div class="absolute w-[147px] h-[306px] border-2 border-[#2BA9F0] rounded-[93px] top-[13%] left-[45%] z-5"></div>
+
+          <!-- CEO -->
+          <div class="flex flex-row items-center absolute top-3 left-[3%] z-10 ">
+            <!-- Details Section -->
+            <div class="flex flex-col text-right order-1 mr-8">
+                <p class="font-sans font-lg font-bold">CEO</p>
+              <h3 class="text-2xl font-light  font-serif">Moses Browne Mwakyanjala (PhD)</h3>
+              <a href="mailto:moses.email@example.com" class="text-lg font-serif font-light text-white">moses.browne.mwakyanjala@remosspace.com</a>
+              <p class="text-lg font-sans font-light">+46 70-28 21 74</p>
+            </div>
+            <!-- Image Section -->
+            <div class="relative w-[183px] h-[275px] flex-shrink-0 order-2">
+              <img src="{% static 'img/team/moses.png' %}" alt="CEO Image" class="rounded-full object-cover w-full h-full" />
+            </div>
+          </div>
+
+          <!-- COO -->
+          <div class="flex flex-row items-center absolute top-[17%] right-[9%] z-10 ">
+            <!-- Details Section -->
+            <div class="flex flex-col text-left order-2 ml-8">
+            <p class="font-sans font-lg font-bold">COO</p>
+              <h3 class="text-2xl font-light  font-serif">Petter Lindberg</h3>
+              <a href="mailto:petter.email@example.com" class="text-lg font-serif font-light text-white">petter.lindberg@remosspace.com</a>
+              <p class="text-lg font-sans font-light">+00-011 22 33</p>
+            </div>
+            <!-- Image Section -->
+            <div class="relative w-[183px] h-[275px] flex-shrink-0 order-1">
+              <img src="{% static 'img/team/petter.png' %}" alt="COO Image" class="rounded-full object-cover w-full h-full" />
+            </div>
+          </div>
+
+          <!-- CSO -->
+          <div class="flex flex-row items-center absolute bottom-[12%] left-[15%] z-10 ">
+            <!-- Details Section -->
+            <div class="flex flex-col text-right order-1 mr-8">
+                <p class="font-sans font-lg font-bold">CSO</p>
+              <h3 class="text-2xl font-light font-serif">Thilini Wijewarna Arachchi</h3>
+              <a href="mailto:thilini.email@example.com" class="text-lg font-serif font-light text-white"">thilini.w@remosspace.com</a>
+              <p class="text-lg font-sans font-light">+46 76 581 56 80</p>
+            </div>
+            <!-- Image Section -->
+            <div class="relative w-[183px] h-[275px] flex-shrink-0 order-2">
+              <img src="{% static 'img/team/thilini.png' %}" alt="CSO Image" class=" filter grayscale rounded-full object-cover w-full h-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Board -->
+      <div class="">
+        <div class="text-start lg:w-[45%] mx-auto mb-12">
+          <h2 class="text-4xl font-normal font-serif">Our Board</h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-5">
+          <!-- Board Member 1 -->
+          <div class="flex flex-col items-center lg:w-[215px] text-center">
+            <div class=" mb-4">
+              <img src="{% static 'img/board/moses.png' %}" alt="Board Member" class="rounded-full object-cover w-[184px] h-[275px] " />
+            </div>
+            <h3 class="text-2xl font-serif font-light">Moses Browne Mwakyanjala</h3>
+            <p class="text-lg font-sans font-light">Founder of Remos</p>
+
+          </div>
+
+          <!-- Board Member 2 -->
+          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+            <div class=" mb-4">
+                <img src="{% static 'img/board/christer.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px]" />
+            </div>
+            <h3 class="text-2xl font-serif font-light">Christer Andersson</h3>
+            <p class="text-lg font-sans font-light">Earth Observation Expert</p>
+          </div>
+
+          <!-- Board Member 3 -->
+          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+            <div class="mb-4">
+                <img src="{% static 'img/board/mustafa.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px]" />
+            </div>
+            <h3 class="text-2xl font-serif font-light">Mustapha Elriz</h3>
+            <p class="text-lg font-sans font-light">Founder of Satosuit</p>
+          </div>
+
+          <!-- Board Member 4 -->
+          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+            <div class=" mb-4">
+                <img src="{% static 'img/board/stefan.png' %}" alt="Board Member" class=" rounded-full object-cover w-[184px] h-[275px]" />
+            </div>
+            <h3 class="text-2xl font-serif font-light">Stefan Gardefjord</h3>
+            <p class="text-lg font-sans font-light">Former CEO of SSC</p>
+          </div>
+
+          <!-- Board Member 5 -->
+          <div class="flex flex-col items-center lg:w-[215px] text-center ">
+            <div class=" mb-4">
+                <img src="{% static 'img/board/markus.png' %}" alt="Board Member" class="rounded-full object-cover w-[184px] h-[275px]" />
+            </div>
+            <h3 class="text-2xl font-serif font-light">Markus Priman</h3>
+            <p class="text-lg font-sans font-light">Co-Founder of Nexabounds</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
