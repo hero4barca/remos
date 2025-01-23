@@ -2415,6 +2415,10 @@ video {
     height: 45px !important;
   }
 
+  .lgTo1160\:h-\[260px\] {
+    height: 260px !important;
+  }
+
   .lgTo1160\:w-44 {
     width: 11rem !important;
   }
