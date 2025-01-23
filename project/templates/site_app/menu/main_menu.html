@@ -1,15 +1,15 @@
 
 <!-- Navigation Section -->
-      <nav class="flex items-center gap-12 lgTo1160:gap-10 mr-8 lgTo1160:mr-6">
-        <a href="/" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] lgTo1160:text-lg font-light leading-normal hover:text-blue-500 transition">Home</a>
+      <nav class="flex items-center gap-12 lgTo1160:gap-10 mr-8 lgTo1160:mr-6 text-[20px] md:text-lg md:mr-4">
+                <a href="/" class="text-[#0C0F22] text-center font-[Source Sans Pro]  mdTo1160:text-lg font-light leading-normal hover:text-blue-500 transition">Home</a>
 
           {% for item in menu_items %}
             {% if forloop.last and menu_items|length > 1 %}
-                <a href="{{ item.href }}" class="text-blue-500 px-12 lgTo1160:px-9 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
+                <a href="{{ item.href }}" class="text-blue-500 px-12 lgTo1160:px-9 md:px-6 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
                     {{ item.text }}
                 </a>
             {% else %}
-                <a href="{{ item.href }}" class="text-[#0C0F22] text-center font-[Source Sans Pro] text-[20px] font-light leading-normal hover:text-blue-500 transition">
+                <a href="{{ item.href }}" class="text-[#0C0F22] text-center font-[Source Sans Pro] font-light leading-normal hover:text-blue-500 transition">
                     {{ item.text }}
                 </a>
             {% endif %}
