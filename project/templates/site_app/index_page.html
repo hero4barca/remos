@@ -13,7 +13,7 @@
       <!-- Hero Section -->
       <section class="relative bg-cover bg-center text-white text-center mdTo1160:max-h-screen md:h-screen"
               style="background-image: url('{% static "img/hero-image.png" %}'); background-size: cover; background-repeat: no-repeat; aspect-ratio: 16 / 8;">
-        <div class="absolute inset-0 flex md:max-w-[70%] md:mx-auto flex-col items-center justify-center">
+        <div class="absolute inset-0 flex md:max-w-[70%] lg:max-w-full md:mx-auto flex-col items-center justify-center">
           <h1 class="text-white text-center font-serif text-[3rem] lgTo1160:text-[2.5rem] md:text-[4rem] font-normal leading-normal">
             The link between earth and space.
           </h1>
@@ -57,7 +57,7 @@
 
       <!-- Tagline -->
       <section class="bg-[#0C0F22] items-center justify-center py-11">
-        <div class="text-white text-center font-serif text-[40px] font-normal leading-normal">
+        <div class="text-white text-center font-serif text-[40px] md:text-[36px] md:w-[70%] md:mx-auto font-normal leading-normal">
           <p>Effortless Ground Control for Boundless Exploration.</p>
         </div>
       </section>
@@ -65,9 +65,9 @@
       <!-- Product overview-->
       <section class="bg-white py-12 px-6">
         <!-- Product Overview -->
-        <div class="max-w-5xl  mx-auto h-[100%] flex flex-col lg:flex-row items-start gap-8 mb-16">
+        <div class="lg:max-w-5xl mx-auto h-[100%] flex flex-col lg:flex-row md:flex-row items-start gap-8 md:gap-4 mb-16">
           <!-- Text Content -->
-          <div class="lg:w-1/2 bg-white rounded-[81px] mix-blend-multiply light-box-shadow my-auto p-6 ">
+          <div class="w-1/2 bg-white rounded-[81px] mix-blend-multiply light-box-shadow my-auto p-6 ">
             <div class="text-black font-sans text-[18px] font-light leading-normal mb-4 mt-8 mr-5">
               The Expedite product range offers a cutting-edge suite of tools for satellite ground operations, combining automation, scalability, and versatility.
             </div>
@@ -81,13 +81,13 @@
           </div>
 
           <!-- Image Section -->
-          <div class="lg:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px] ">
+          <div class="w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px] ">
             <!-- <div class="relative items-center w-full h-max">   </div> -->
               <!-- Larger Ellipse (Background) -->
               <div class="absolute bg-[#0C0F22] w-[285px] h-[284px] rounded-full top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
 
               <!-- White Small Ellipse -->
-              <div class="absolute top-[21%] right-[46%] bg-white w-[15px] h-[15px] rounded-full z-10"></div>
+              <div class="absolute top-[21%] md:top-[19%] right-[47%] bg-white w-[15px] h-[15px] md:w-[10px] md:h-[10px] rounded-full z-10"></div>
 
               <!-- Decorative Rounded Rectangles -->
               <div class="absolute w-[127px] h-[268px] border-2 border-[#2BA9F0] rounded-[72px] bottom-[40%] left-[38%] z-5"></div>
@@ -106,22 +106,22 @@
         <!-- Why Us Section -->
       <div class="max-w-6xl mx-auto">
         <h2 class="text-2xl font-bold text-left mb-10">Why Us?</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 rounded-[81px] p-8 light-box-shadow">
+        <div class="grid grid-cols-1 md:grid-cols-3  gap-0 rounded-[81px] p-8 light-box-shadow">
           <!-- Card 1 -->
-          <div class="p-6 border-b border-r border-[#2BA9F0] text-center">
-            <h3 class="text-lg font-semibold mb-6">Fully encompassing solution</h3>
+          <div class=" md:p-3 lg:p-6 border-b border-r border-[#2BA9F0] text-center">
+            <h3 class="md:text-base lg:text-lg  font-semibold md:mb-4 lg:mb-6">Fully Encompassing Solution</h3>
             <div class="text-gray-600 block text-left" > <p>Our integrated suite of software simplifies satellite operations, offering everything you need in one place.</p></div>
           </div>
           <!-- Card 2 -->
-          <div class="p-6 border-b border-r border-[#2BA9F0] text-center">
-            <h3 class="text-lg font-semibold mb-6">Seamless integration</h3>
+          <div class="md:p-3 lg:p-6 border-b border-r border-[#2BA9F0] text-center">
+            <h3 class="md:text-base lg:text-lg  font-semibold md:mb-4 lg:mb-6">Seamless Integration</h3>
             <div class="text-gray-600 block text-left">
               <p>    With a REST API for control and a Streaming API for data, our software seamlessly integrates with your existing systems. </p></div>
 
             </div>
           <!-- Card 3 -->
-          <div class="p-6 border-b border-[#2BA9F0] text-center">
-            <h3 class="text-lg font-semibold mb-6">Intuitive</h3>
+          <div class="md:p-3 lg:p-6 border-b border-[#2BA9F0] text-center">
+            <h3 class="md:text-base lg:text-lg  font-semibold md:mb-4 lg:mb-6">Intuitive</h3>
             <div class="text-gray-600 block text-left">
             <p>
               Designed with a low learning curve, our products are easy to use and master, ensuring efficient operations.
@@ -129,20 +129,20 @@
           </div>
           </div>
           <!-- Card 4 -->
-          <div class="p-6 border-r border-[#2BA9F0] text-center">
-            <h3 class="text-lg font-semibold mb-6">Satellite Compatibility</h3>
+          <div class="md:p-3 lg:p-6 border-r border-[#2BA9F0] text-center">
+            <h3 class="md:text-base lg:text-lg  font-semibold md:mb-4 lg:mb-6">Satellite Compatibility</h3>
             <div class="text-gray-600 block text-left"> <p>
               Compatible with various satellites, our software ensures flexibility without vendor lock-in. </p></div>
           </div>
           <!-- Card 5 -->
-          <div class="p-6 border-r border-[#2BA9F0] text-center">
-            <h3 class="text-lg font-semibold mb-6">Flexible Licensing</h3>
+          <div class="md:p-3 lg:p-6 border-r border-[#2BA9F0] text-center">
+            <h3 class="md:text-base lg:text-lg  font-semibold md:mb-4 lg:mb-6">Flexible Licensing</h3>
             <div class="text-gray-600 block text-left">
             <p> Choose from term-based or perpetual licensing based on your needs.</p></div>
           </div>
           <!-- Card 6 -->
-          <div class="p-6 text-center">
-            <h3 class="text-lg font-semibold mb-6">Customer Support</h3>
+          <div class="md:p-3 lg:p-6 text-center">
+            <h3 class="md:text-base lg:text-lg  font-semibold md:mb-4 lg:mb-6">Customer Support</h3>
             <div class="text-gray-600 block text-left">
               <p> Our team is always available to provide technical support to our valued customers when needed. </p></div>
           </div>
