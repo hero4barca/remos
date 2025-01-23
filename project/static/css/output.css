@@ -2180,6 +2180,10 @@ video {
     padding-right: 2rem !important;
   }
 
+  .md\:pb-24 {
+    padding-bottom: 6rem !important;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
@@ -2236,6 +2240,10 @@ video {
 
   .lg\:top-\[17\%\] {
     top: 17% !important;
+  }
+
+  .lg\:bottom-10 {
+    bottom: 2.5rem !important;
   }
 
   .lg\:order-1 {
@@ -2401,6 +2409,10 @@ video {
   .lg\:px-8 {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+  }
+
+  .lg\:pb-16 {
+    padding-bottom: 4rem !important;
   }
 
   .lg\:text-left {
