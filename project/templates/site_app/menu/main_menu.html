@@ -5,7 +5,7 @@
 
           {% for item in menu_items %}
             {% if forloop.last and menu_items|length > 1 %}
-                <a href="{{ item.href }}" class="text-blue-500  px-12 lgTo1160:px-9 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
+                <a href="{{ item.href }}" class="text-blue-500 px-12 lgTo1160:px-9 py-1 rounded-full hover:text-blue-500 transition products-nav-item light-box-shadow">
                     {{ item.text }}
                 </a>
             {% else %}
