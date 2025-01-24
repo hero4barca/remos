@@ -1528,6 +1528,14 @@ video {
   border-radius: 0.5rem !important;
 }
 
+.rounded-\[35\%\] {
+  border-radius: 35% !important;
+}
+
+.rounded-\[32\%\] {
+  border-radius: 32% !important;
+}
+
 .border {
   border-width: 1px !important;
 }
@@ -2203,6 +2211,18 @@ video {
     gap: 1rem !important;
   }
 
+  .md\:gap-8 {
+    gap: 2rem !important;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem !important;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem !important;
+  }
+
   .md\:p-3 {
     padding: 0.75rem !important;
   }
@@ -2481,6 +2501,10 @@ video {
 
   .lg\:gap-9 {
     gap: 2.25rem !important;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem !important;
   }
 
   .lg\:p-6 {
