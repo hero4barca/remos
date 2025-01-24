@@ -182,3 +182,12 @@
 }
 
 /** //Map css */
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ceo-name, .ceo-email{
+        display: block;
+        max-width: 220px;
+        word-wrap: break-word;
+    }
+  }

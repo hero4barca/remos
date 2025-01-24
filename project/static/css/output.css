@@ -2149,6 +2149,14 @@ video {
     top: 23% !important;
   }
 
+  .md\:left-\[3\%\] {
+    left: 3% !important;
+  }
+
+  .md\:left-\[2\%\] {
+    left: 2% !important;
+  }
+
   .md\:order-none {
     order: 0 !important;
   }
@@ -2405,6 +2413,18 @@ video {
 
   .lg\:top-\[13\%\] {
     top: 13% !important;
+  }
+
+  .lg\:right-\[39\%\] {
+    right: 39% !important;
+  }
+
+  .lg\:right-\[41\%\] {
+    right: 41% !important;
+  }
+
+  .lg\:right-\[40\%\] {
+    right: 40% !important;
   }
 
   .lg\:order-1 {
@@ -2845,6 +2865,14 @@ video {
 
   .lgTo1220\:right-\[4\%\] {
     right: 4% !important;
+  }
+
+  .lgTo1220\:right-\[36\%\] {
+    right: 36% !important;
+  }
+
+  .lgTo1220\:right-\[35\%\] {
+    right: 35% !important;
   }
 
   .lgTo1220\:ml-4 {
