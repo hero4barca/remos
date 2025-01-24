@@ -2507,6 +2507,10 @@ video {
     gap: 4rem !important;
   }
 
+  .lg\:gap-12 {
+    gap: 3rem !important;
+  }
+
   .lg\:p-6 {
     padding: 1.5rem !important;
   }
