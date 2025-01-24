@@ -11,34 +11,33 @@
 {% block page %}
 <!-- contact section -->
 <section class="bg-white py-12 flex-grow">
-  <div class="container mx-auto max-w-5xl mb-3 text-[#0C0F22] top-section-first-div lgTo1160:pl-5">
+  <div class="container mx-auto max-w-5xl mb-3 text-[#0C0F22] top-section-first-div md:pl-10 lgTo1160:pl-5">
     <h2 class="font-serif font-normal text-4xl lgTo1160:text-3xl ">Contact</h2>
     <h3 class="font-bold text-lg lgTo1160:text-base font-sans"> Reach Out </h3>
   </div>
-  <div class="container mt-9 mx-auto max-w-5xl  grid grid-cols-1 md:grid-cols-3 gap-5 lgTo1160:gap-3 lgTo1160:px-5 ">
+  <div class="container mt-9 mx-auto lg:max-w-5xl md:flex md:flex-col lg:grid  lg:grid-cols-3 lg:gap-5 lgTo1160:gap-3 lgTo1160:px-5 ">
 
     <!-- Contact Information -->
-    <div class="space-y-8 font-sans text-[#0C0F22]">
-      <div class="p-8 light-box-shadow  rounded-[41px] ">
+    <div class="space-y-8 font-sans text-[#0C0F22] md:flex md:flex-row md:justify-between md:gap-10 md:space-y-0 md:mx-auto md:w-[90%] lg:grid">
+      <div class="p-8 light-box-shadow rounded-[41px] md:flex-grow md:flex md:flex-col lg:grid md:w-[40%] lg:w-full">
         <p class="font-bold text-lg lgTo1160:text-base ml-2">Email:</p>
         <p class="font-light text-[1.7rem] lgTo1160:text-[1.4rem] leading-8">info@remosspace.com</p>
         <p class="font-bold text-lg lgTo1160:text-base mt-5 ml-3">Phone:</p>
-        <p class="font-light text-[1.7rem] lgTo1160:text-[1.4rem]  leading-8">+46 70 307 69 11</p>
+        <p class="font-light text-[1.7rem] lgTo1160:text-[1.4rem] leading-8">+46 70 307 69 11</p>
       </div>
-      <div class="mt-10 p-8 light-box-shadow  rounded-[41px] ">
+      <div class="lg:mt-10 p-8 light-box-shadow rounded-[41px] md:flex-grow md:flex md:flex-col md:w-[40%] lg:grid lg:w-full md:mt-0">
         <p class="font-bold text-lg lgTo1160:text-base">Remos Space Systems AB</p>
         <div class="mt-4 block font-light text-[1.7rem] lgTo1160:text-[1.4rem] leading-8">
           <p>Aurorum 1C</p>
           <p>SE-977 75 Luleå,</p>
-          <p> Sweden</p>
+          <p>Sweden</p>
         </div>
-
       </div>
     </div>
 
 
     <!-- Illustration -->
-  <div class="flex justify-center  items-center relative w-96 h-96 lgTo1160:w-[307px] lgTo1160:h-[307px]">
+  <div class="flex justify-center  items-center relative md:w-80 md:h-72 lg:w-96 lg:h-96 lgTo1160:w-[307px] lgTo1160:h-[307px] md:mx-auto">
     <!-- Dark Circle (lowest z-index) -->
     <div class="absolute bg-gray-900 rounded-full w-56 h-56 lgTo1160:w-[172px] lgTo1160:h-[172px] z-0"></div>
 
@@ -56,7 +55,7 @@
 
 
     <!-- Contact Form -->
-    <div class=" px-7 pb-16 pt-9 rounded-[51px]  light-box-shadow">
+    <div class=" px-7 pb-16 pt-9 rounded-[51px] md:w-[75%] lg:w-full md:mx-auto light-box-shadow">
       <form class="space-y-4 ">
         <input
           type="text"
