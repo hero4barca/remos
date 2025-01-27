@@ -2798,6 +2798,10 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
 
+  .lg\:grid-cols-\[9fr_11fr\] {
+    grid-template-columns: 9fr 11fr !important;
+  }
+
   .lg\:flex-row {
     flex-direction: row !important;
   }
