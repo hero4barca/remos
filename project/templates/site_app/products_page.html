@@ -184,30 +184,7 @@
   </div>
 </section>
 
-<!-- Reach Out section -->
-<section class="bg-[#0C0F22] py-12">
-  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:gap-5 lg:gap-14 px-4">
-    <!-- Image -->
-    <div class="flex-shrink-0">
-      <img
-        src="{% static 'img/team/petter.png' %}"
-        alt="Petter Lindberg"
-        class="rounded-[40%] grayscale w-48 max-h-34 object-cover"
-      />
-    </div>
-    <!-- Content -->
-    <div class="text-white text-center md:text-left">
-      <p class="flex-[1_0_0] self-stretch font-serif md:text-[21px] lg:text-[25px] font-light leading-none mb-5">Want to know more about our products?</p>
-      <p class="font-bold text-lg mb-4">Reach out to</p>
-      <p class="flex-[1_0_0] self-stretch font-serif md:text-[21px] lg:text-[25px] font-light leading-none mb-2">Petter Lindberg</p>
-      <a href="mailto:petter.lindberg@remosspace.com" class=" underline text-lg">
-        petter.lindberg@remosspace.com
-      </a>
-      <p class="text-blue-400 text-lg mt-2">+46 10-278 21 74</p>
-    </div>
-  </div>
-</section>
-
+{% include 'site_app/includes/reach_out.html' %}
 
 
 {% endblock %}
