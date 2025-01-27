@@ -29,7 +29,7 @@
   </div>
 
   <!-- podcast Cards -->
-  <div class=" grid grid-cols-1 lg:grid-cols-4 gap-0 mt-6  ">
+  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 mt-6  ">
     <!-- Card 1 -->
     <div class="p-9 lgTo1160:p-6 border-r border-[#2BA9F0] flex flex-col">
       <div class="h-52 w-52 lgTo1160:h-44 lgTo1160:w-44 rounded-[45px] bg-cover bg-center mx-auto"
@@ -84,7 +84,7 @@
       </p>
 
       <!-- News Cards -->
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
         <!-- Card 1 -->
         <div class="p-9 border-r border-[#2BA9F0] flex flex-col">
           <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
@@ -127,27 +127,7 @@
       </div>
     </div>
 
-    <!-- Podcast Section -->
-    <div class="flex flex-col lg:flex-row items-center justify-between lg:w-[70%] lgTo1160:w-[90%]">
-      <!-- Podcast Info -->
-      <div class="bg-[#0C0F22] dark-box-shadow rounded-[81px] p-8 flex-1 max-w-[45%] ">
-        <h3 class="text-white text-4xl font-serif mb-4">Podcast</h3>
-        <p class="text-white mb-4">
-          Listen to our podcast - <span class="font-bold">Space to Ground.</span>
-        </p>
-        <p class="text-white mb-6">
-          This podcast is meant to drive more <span class="font-bold">awareness</span>, explore the <span class="font-bold">latest technologies</span>,
-          and <span class="font-bold">help the industry navigate collaborative opportunities</span>.
-        </p>
-        <a href="#" class="text-blue-400 hover:underline">
-          Browse episodes >
-        </a>
-      </div>
-      <!-- Podcast Logo -->
-      <div class="">
-        <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-64 h-auto lg:min-w-[368px]">
-      </div>
-    </div>
+    {% include 'site_app/includes/podcast_div.html' %}
   </div>
 </section>
 
