@@ -196,4 +196,23 @@
         max-width: 170px;
         word-wrap: break-word;
     }
+
+    /* Always show scrollbar */
+  .custom-scrollbar {
+    overflow-x: scroll;
+    scrollbar-width: thin; /* For Firefox */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6; /* Light gray */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #6b7280; /* Gray */
+    border-radius: 4px;
+  }
   }

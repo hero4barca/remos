@@ -13,29 +13,29 @@
   <!-- Products-->
 <section class="bg-white py-12 px-6 ">
   <!-- Product Overview -->
-  <div class="max-w-5xl mx-auto h-full flex flex-col lg:flex-row items-start gap-8 top-section-first-div">
+  <div class=" md:max-w-[90%] lg:max-w-[80%] md:mx-auto h-full flex flex-col md:flex-row items-start md:gap-7 lg:gap-10 top-section-first-div">
     <!-- Text Section -->
-    <div class="lg:w-1/2 flex flex-col text-center lg:text-left">
+    <div class="md:w-1/2 flex flex-col text-center md:text-left ">
       <h2 class="text-3xl font-serif font-normal mb-2 text-[#0C0F22]">Product Overview</h2>
-      <h3 class="text-[25px] text-black font-serif font-light mb-4"> Expedite Series </h3>
-      <p class="text-base font-sans font-normal text-black leading-relaxed mb-6">
+      <h3 class="text-[22px] text-black font-serif font-light mb-4"> Expedite Series </h3>
+      <p class="text-base font-sans font-light text-black leading-relaxed mb-6 text-justify">
         <span class="font-bold">The Expedite product range offers a cutting-edge suite of tools for satellite ground operations,</span> combining automation, scalability, and versatility. Designed to simplify complex mission management, Expedite products power seamless communication, tracking, and control, empowering operators with advanced features in a streamlined, user-friendly package.
       </p>
       <div class="flex flex-col items-center gap-4">
-        <button class=" text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans lg:w-[60%] light-box-shadow">
+        <button class=" text-black px-4 py-2 rounded-[50px] font-light md:text-base lg:text-lg font-sans md:w-[90%] lgTo1160:w-[80%] lg:w-[60%] light-box-shadow">
           Expedite Turnkey Ground Station
         </button>
-        <button class=" text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans lg:w-[60%] light-box-shadow">
+        <button class=" text-black px-4 py-2 rounded-[50px] font-light md:text-base  lg:text-lg font-sans md:w-[90%] lgTo1160:w-[80%] lg:w-[60%] light-box-shadow">
           Expedite Sequencer
         </button>
-        <button class=" text-black px-4 py-2 rounded-[50px] font-light text-lg font-sans lg:w-[60%] light-box-shadow">
+        <button class=" text-black px-4 py-2 rounded-[50px] font-light md:text-base  lg:text-lg font-sans md:w-[90%] lgTo1160:w-[80%] lg:w-[60%] light-box-shadow">
           Expedite Software Modem
         </button>
       </div>
     </div>
 
     <!-- Image Section -->
-    <div class="lg:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px]">
+    <div class="md:w-1/2 relative flex justify-center items-center p-10 rounded-lg overflow-hidden min-h-[450px]">
       <!-- Larger Ellipse (Background) -->
       <div class="absolute bg-[#0C0F22] w-[285px] h-[284px] rounded-full top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"></div>
 
@@ -53,28 +53,28 @@
   </div>
 
   <!-- Expedite Software Modem -->
-  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-12">
+  <div class="md:max-w-[90%] lg:max-w-[80%] md:mx-auto flex flex-col md:flex-row items-center md:gap-7 lg:gap-10 mt-12">
     <!-- Text Content -->
-    <div class="lg:w-1/2  font-sans font-lg">
+    <div class="md:w-1/2  font-sans font-lg">
       <h3 class="text-xl font-sans font-bold mb-1">Expedite Software Modem</h3>
-      <p class="text-base font-light  text-black leading-relaxed">
+      <p class="md:text-[15px] lg:text-base font-light  text-black leading-relaxed text-justify">
         The Expedite Software Modem is a software-based communication tool for controlling and communicating with small satellites. It combines several functions into one solution: it works as a modem, controls the antenna, and schedules mission tasks. This modem can handle different types of satellite communication and formats, making it compatible with a variety of satellite systems like Geostationary and S-EOs. It has a user-friendly interface, advanced diagnostic tools, and can be controlled via a REST API, allowing easy integration with other software and automation of routine operations.
       </p>
     </div>
     <!-- Image -->
-    <div class="lg:w-1/2 flex justify-center">
-      <div class="rounded-[60px] light-box-shadow min-h-full px-4 pb-7 pt-8">
-        <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="w-[601px] h-auto ">
+    <div class=" md:w-1/2  flex justify-center">
+      <div class="rounded-[60px] light-box-shadow min-h-full px-4 md:pb-10 md:pt-12 lg:pb-7 lg:pt-8">
+        <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="md:w-[500px] lg:w-[601px] h-auto ">
       </div>
     </div>
   </div>
 
   <!-- Expedite Turnkey -->
-  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-12">
+  <div class="md:max-w-[90%] lg:max-w-[80%]  md:mx-auto flex flex-col md:flex-row items-center md:gap-7 lg:gap-10 mt-12">
     <!-- Text Content -->
-    <div class="lg:w-1/2  font-sans font-lg">
+    <div class="md:w-1/2  font-sans font-lg">
       <h3 class="text-xl font-sans font-bold mb-1">Expedite Turnkey Ground Station</h3>
-      <p class="text-base font-light  text-black leading-relaxed">
+      <p class="md:text-[15px] lg:text-base font-light  text-black text-justify leading-relaxed">
         The Expedite Turnkey Ground Station is a complete, ready-to-use ground station package designed for
         satellite missions. It includes everything needed for ground communication, such as antennas,
         a transceiver, and a sequencing system. The antennas can handle different frequencies (UHF, VHF,
@@ -84,19 +84,19 @@
       </p>
     </div>
     <!-- Image -->
-    <div class="lg:w-1/2 flex justify-center">
-      <div class="rounded-[60px] light-box-shadow min-h-full px-4 pb-7 pt-8">
+    <div class="md:w-1/2 flex justify-center">
+      <div class="rounded-[60px] light-box-shadow min-h-full px-4 md:pb-10 md:pt-12 lg:pb-7 lg:pt-8">
         <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="w-[601px] h-auto ">
       </div>
     </div>
   </div>
 
    <!-- Expedite sequencer -->
-   <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 mt-12">
+   <div class="md:max-w-[90%] lg:max-w-[80%] md:mx-auto flex flex-col md:flex-row items-center md:gap-7 lg:gap-10 mt-12">
     <!-- Text Content -->
-    <div class="lg:w-1/2  font-sans font-lg">
+    <div class="md:w-1/2  font-sans font-lg">
       <h3 class="text-xl font-sans font-bold mb-1">Expedite Sequencer</h3>
-      <p class="text-base font-light  text-black leading-relaxed">
+      <p class="md:text-[15px] lg:text-base font-light  text-black md:text-justify leading-relaxed">
         The Expedite Sequencer is a device that manages the timing and coordination of satellite signal
         transmissions. It includes an embedded computer and display for real-time monitoring and can operate
         automatically or be controlled remotely. With strong connectivity options and built-in RF switches,
@@ -106,8 +106,8 @@
       </p>
     </div>
     <!-- Image -->
-    <div class="lg:w-1/2 flex justify-center">
-      <div class="rounded-[60px] light-box-shadow min-h-full px-4 pb-7 pt-8">
+    <div class="md:w-1/2 flex justify-center">
+      <div class="rounded-[60px] light-box-shadow min-h-full px-4 md:pb-10 md:pt-12 lg:pb-7 lg:pt-8">
         <img src="{% static 'img/expedite.png' %}" alt="Expedite Software Modem" class="w-[601px] h-auto ">
       </div>
     </div>
@@ -125,51 +125,54 @@
 <!-- Products comparison-->
 <section class="bg-white py-16 px-6">
   <!-- Products Section -->
-  <div class="max-w-[80%] mx-auto">
+  <div class="md:max-w-[90%] lg:max-w-[80%] mx-auto">
     <!-- Product Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-      <!-- Card 1 -->
-      <div class="text-lg font-sans font-light">
-        <h3 class=" text-center mb-5 light-box-shadow py-2 rounded-[50px] mx-auto w-[85%] lgTo1160:w-[90%] lgTo1160:text-sm">Expedite Software Modem</h3>
-        <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
-          <span class="font-semibold">Pros:</span>
-          <ul class="text-base lgTo1160:text-sm font-light leading-relaxed list-disc pl-6 lg:h-[234px] lgTo1160:h-[260px]">
-            <li>Flexible and Versatile: Compatible with multiple satellite communication formats and external transceivers.</li>
-            <li>Highly integrated: REST API allows easy integration with ground networks and control software.</li>
-            <li>Cost-effective: Software-based solution that doesn't require physical hardware.</li>
-          </ul>
+     <div class="md:overflow-x-auto custom-scrollbar p-1">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:w-[1041px] lg:w-auto">
+          <!-- Card 1 -->
+          <div class="text-lg font-sans font-light ">
+            <h3 class=" text-center mb-5 light-box-shadow py-2 rounded-[50px] mx-auto w-[85%] lgTo1160:w-[90%] lgTo1160:text-sm">Expedite Software Modem</h3>
+            <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
+              <span class="font-semibold">Pros:</span>
+              <ul class="text-base lgTo1160:text-sm font-light leading-relaxed list-disc pl-6 md:h-[234px] lg:h-[234px] lgTo1160:h-[260px]">
+                <li>Flexible and Versatile: Compatible with multiple satellite communication formats and external transceivers.</li>
+                <li>Highly integrated: REST API allows easy integration with ground networks and control software.</li>
+                <li>Cost-effective: Software-based solution that doesn't require physical hardware.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Card 2 -->
+          <div class="text-lg font-sans font-light ">
+            <h3 class=" text-center light-box-shadow mb-5 py-2 rounded-[50px] mx-auto w-[85%] lgTo1160:w-[90%] lgTo1160:text-sm">Expedite Turnkey Ground Station</h3>
+            <div class="light-box-shadow py-7 px-4 rounded-[55px]">
+              <span class="font-semibold">Pros:</span>
+              <ul class="text-base lgTo1160:text-sm font-light leading-relaxed list-disc pl-6 md:h-[234px] lg:h-[234px] lgTo1160:h-[260px]">
+                <li>Complete Package: Includes antennas, transceivers, and sequencer for a full, plug-and-play ground station.</li>
+                <li>Adaptable: Supports multiple bands (UHF, VHF, S-band) for a wide range of mission needs.</li>
+                <li>Automated Operations: Features like Doppler correction and mission scheduling make it easy to operate.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Card 3 -->
+          <div class="text-lg font-sans font-light ">
+            <h3 class=" text-center mb-5 light-box-shadow py-2 rounded-[50px] mx-auto  w-[85%] lgTo1160:w-[90%] lgTo1160:text-sm">Expedite Sequencer</h3>
+            <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
+            <span class="font-semibold">Pros:</span>
+              <ul class="text-base lgTo1160:text-sm font-light leading-relaxed list-disc pl-6 md:h-[234px] lg:h-[234px] lgTo1160:h-[260px]">
+                <li>Precise Signal Management: Controls transmission timing and power for efficient operations.</li>
+                <li>Remote Control: Can be managed automatically or remotely, reducing the need for on-site supervision.</li>
+                <li>Diagnostic Tools: Real-time monitoring with a built-in display and advanced sensor data.</li>
+              </ul>
+          </div>
+
+          </div>
         </div>
-
       </div>
 
-      <!-- Card 2 -->
-      <div class="text-lg font-sans font-light ">
-        <h3 class=" text-center light-box-shadow mb-5 py-2 rounded-[50px] mx-auto w-[85%] lgTo1160:w-[90%] lgTo1160:text-sm">Expedite Turnkey Ground Station</h3>
-        <div class="light-box-shadow py-7 px-4 rounded-[55px]">
-          <span class="font-semibold">Pros:</span>
-          <ul class="text-base lgTo1160:text-sm font-light leading-relaxed list-disc pl-6 lg:h-[234px] lgTo1160:h-[260px]">
-            <li>Complete Package: Includes antennas, transceivers, and sequencer for a full, plug-and-play ground station.</li>
-            <li>Adaptable: Supports multiple bands (UHF, VHF, S-band) for a wide range of mission needs.</li>
-            <li>Automated Operations: Features like Doppler correction and mission scheduling make it easy to operate.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Card 3 -->
-      <div class="text-lg font-sans font-light ">
-        <h3 class=" text-center mb-5 light-box-shadow py-2 rounded-[50px] mx-auto  w-[85%] lgTo1160:w-[90%] lgTo1160:text-sm">Expedite Sequencer</h3>
-        <div class="light-box-shadow py-7 px-4 rounded-[55px] ">
-         <span class="font-semibold">Pros:</span>
-          <ul class="text-base lgTo1160:text-sm font-light leading-relaxed list-disc pl-6 lg:h-[234px] lgTo1160:h-[260px]">
-            <li>Precise Signal Management: Controls transmission timing and power for efficient operations.</li>
-            <li>Remote Control: Can be managed automatically or remotely, reducing the need for on-site supervision.</li>
-            <li>Diagnostic Tools: Real-time monitoring with a built-in display and advanced sensor data.</li>
-          </ul>
-       </div>
-
-      </div>
-    </div>
 
     <!-- Call to Action -->
     <div class="text-center">
@@ -183,7 +186,7 @@
 
 <!-- Reach Out section -->
 <section class="bg-[#0C0F22] py-12">
-  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-14 px-4">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:gap-5 lg:gap-14 px-4">
     <!-- Image -->
     <div class="flex-shrink-0">
       <img
@@ -193,10 +196,10 @@
       />
     </div>
     <!-- Content -->
-    <div class="text-white text-center lg:text-left">
-      <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-5">Want to know more about our products?</p>
+    <div class="text-white text-center md:text-left">
+      <p class="flex-[1_0_0] self-stretch font-serif md:text-[21px] lg:text-[25px] font-light leading-none mb-5">Want to know more about our products?</p>
       <p class="font-bold text-lg mb-4">Reach out to</p>
-      <p class="flex-[1_0_0] self-stretch font-serif text-[25px] font-light leading-none mb-2">Petter Lindberg</p>
+      <p class="flex-[1_0_0] self-stretch font-serif md:text-[21px] lg:text-[25px] font-light leading-none mb-2">Petter Lindberg</p>
       <a href="mailto:petter.lindberg@remosspace.com" class=" underline text-lg">
         petter.lindberg@remosspace.com
       </a>
