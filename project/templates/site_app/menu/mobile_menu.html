@@ -1,0 +1,9 @@
+
+
+<!-- Menu Items -->
+<nav class="mt-10 w-full">
+    <a href="/" class="block py-4 text-lg border-b border-gray-600">Home</a>
+    {% for item in menu_items %}
+    <a href="{{ item.href }}" class="block py-4 text-lg border-b border-gray-600">{{item.text}}</a>
+    {% endfor %}
+</nav>

@@ -60,6 +60,17 @@
       </div>
   </div>
 
+  <!-- Mobile Full-Screen Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-[#0C0F22] text-white flex-col items-start p-6 box-border z-50 w-screen h-[500px] hidden md:hidden">
+      <!-- Top Section -->
+      <div class="flex flex-row items-center justify-between w-full">
+        <img src="{% static 'img/logo-white.png' %}" alt="Remos Logo" class="w-[130px] h-auto" />
+        <button id="closeMenu" class="w-12 h-12 text-2xl text-white rounded-full dark-box-shadow hover:bg-blue-500 hover:text-white transition">
+            ✕
+        </button>
+      </div>
+    {% main_menu template="site_app/menu/mobile_menu.html" %}
+  </div>
 
   {% block page %}
 
@@ -121,7 +132,36 @@
     </div>
   </footer>
 </body>
+<script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const closeMenu = document.getElementById("closeMenu");
 
+        mobileMenuToggle.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+            mobileMenu.classList.add("flex");
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        });
+
+        closeMenu.addEventListener("click", () => {
+            closeMobileMenu();
+        });
+
+        // Close menu if user clicks outside of it
+        document.addEventListener("click", (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                closeMobileMenu();
+            }
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove("flex");
+            mobileMenu.classList.add("hidden");
+            document.body.style.overflow = "";
+        }
+    });
+</script>
 {% block page-based-js %}
 
 {% endblock %}
