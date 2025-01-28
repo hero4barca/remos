@@ -1026,6 +1026,10 @@ video {
   height: max-content !important;
 }
 
+.h-\[56px\] {
+  height: 56px !important;
+}
+
 .max-h-24 {
   max-height: 6rem !important;
 }
@@ -2245,6 +2249,10 @@ video {
 
   .md\:h-screen {
     height: 100vh !important;
+  }
+
+  .md\:h-\[66px\] {
+    height: 66px !important;
   }
 
   .md\:w-1\/2 {
