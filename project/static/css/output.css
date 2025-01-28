@@ -1946,6 +1946,14 @@ video {
   line-height: 1.75rem !important;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem !important;
+}
+
+.text-\[2\.2rem\] {
+  font-size: 2.2rem !important;
+}
+
 .font-bold {
   font-weight: 700 !important;
 }

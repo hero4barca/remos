@@ -6,14 +6,3 @@ Postgres cluster bold-hill-4593 created
   Proxy port:  5432
   Postgres port:  5433
   Connection string: postgres://postgres:tj0jw8KRwpiZCt3@bold-hill-4593.flycast:5432
-
-
-  <!-- <div class="absolute top-5 left-1/2 transform -translate-x-1/2 sm:w-[95%] lgTo1160:w-[85%] lg:w-[80%] md:w-[90%] lg:flex-shrink-0 flex items-center justify-between h-[66px] bg-white backdrop-blur-md md:px-6 lg:px-8 py-3 rounded-full nav-shadow z-10"> -->
-      <!-- Logo Section -->
-      <!-- <div class="flex items-center md:flex-shrink-0"> -->
-          <!-- <img src="{% static 'img/logo.png' %}" alt="Remos Logo" class="sm:w-[75px] md:w-[110px] lg:w-auto h-auto" /> -->
-      <!-- </div> -->
-
-      <!-- Navigation Section -->
-      <!-- {% main_menu template="site_app/menu/main_menu.html" %} -->
-  <!-- </div> -->
