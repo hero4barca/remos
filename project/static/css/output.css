@@ -3317,6 +3317,10 @@ video {
     line-height: 1.75rem !important;
   }
 
+  .lg\:text-\[40px\] {
+    font-size: 40px !important;
+  }
+
   .lg\:font-light {
     font-weight: 300 !important;
   }
