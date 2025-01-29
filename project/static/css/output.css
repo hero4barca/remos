@@ -1117,6 +1117,10 @@ video {
   height: 100vh !important;
 }
 
+.h-\[111px\] {
+  height: 111px !important;
+}
+
 .max-h-24 {
   max-height: 6rem !important;
 }
@@ -1333,6 +1337,10 @@ video {
 
 .w-screen {
   width: 100vw !important;
+}
+
+.w-\[69px\] {
+  width: 69px !important;
 }
 
 .min-w-fit {
@@ -2632,6 +2640,10 @@ video {
 
   .md\:w-auto {
     width: auto !important;
+  }
+
+  .md\:w-48 {
+    width: 12rem !important;
   }
 
   .md\:max-w-\[47\%\] {
