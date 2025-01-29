@@ -25,28 +25,28 @@
       </section>
 
       <!-- Intro section-->
-      <section class="relative  px-[100px] py-[35px]">
-        <div class=" relative flex flex-col px-auto items-center justify-center min-h-max lg:pb-16 md:pb-24">
+      <section class="relative  md:px-[100px] md:py-[35px]">
+        <div class=" relative flex flex-col px-auto items-center justify-center min-h-max pt-[30px] lg:pb-16 md:pb-24 overflow-x-clip md:overflow-visible">
 
-          <div class="relative w-[657px] flex-grow lg:min-h-[550px] pb-2 "> <!-- Add padding-bottom here -->
+          <div class="relative w-screen h-[580px] md:w-[657px] md:h-auto flex-grow lg:min-h-[550px] pb-2 overflow-x-clip md:overflow-visible"> <!-- Add padding-bottom here -->
             <!-- Decorative Ellipses left-[225px] top-[1px]  -->
-            <div class="absolute w-[140px] h-[324px] left-[302px] top-[281px] rounded-[72px] border border-blue-500"></div>
-            <div class="absolute w-[110px] h-[341px] rounded-[72px] border border-blue-500 left-[248px] top-[1px]"></div>
-
+            <div class="absolute w-[19%] h-[45%] top-[6%] left-[33%] md:w-[140px] md:h-[324px] md:left-[302px] md:top-[281px] rounded-[72px] border border-blue-500"></div>
+            <div class="absolute w-[81px] h-[188px] bottom-[6%] right-[30%] md:w-[110px] md:h-[341px] rounded-[72px] border border-blue-500 md:left-[248px] md:top-[1px]"></div>
+            <div class="absolute w-[44%] h-[19%] left-[20%] bottom-[22%] rounded-[15%] light-box-shadow md:hidden"> </div>
             <!-- Images -->
             <img src="{% static 'img/satellite.png' %}" alt="Satellite"
-                class="absolute w-[270px] h-[320px] left-0 top-[230px] rounded-[96px]" />
+                class="absolute w-[94px] h-[145px]  md:w-[270px] md:h-[320px] left-[35%] bottom-[13%] md:left-0 md:top-[230px] rounded-[96px]" />
             <img src="{% static 'img/dish.png' %}" alt="Dish Antenna"
-                class="absolute w-[278px] h-[372px] left-[400px] top-0 rounded-[112px]"/>
+                class="absolute w-[115px] h-[175px] md:w-[278px] md:h-[372px] right-[22%] -top-[1%] md:left-[400px] md:top-0 rounded-[112px]"/>
 
             <!-- Content Card -->
-            <div class="relative flex flex-col items-center justify-start gap-4 mt-16 ">
-              <div class="relative flex flex-col bg-[#FCFEFF] rounded-[119px] p-[29px_15px_15px_15px] h-[422px] w-[330px] gap-[18px] items-center text-center light-box-shadow flex-shrink-0">
-                <h2 class="text-4xl font-serif font-normal text-black">This is us</h2>
-                <p class="mt-4 text-black text-center font-sans text-[18px] font-light leading-normal">
+            <div class="relative flex flex-col items-center justify-start gap-4 mt-24">
+              <div class="relative flex flex-col bg-[#FCFEFF] rounded-[119px] p-[29px_15px_15px_15px] h-[300px] w-[210px] md:h-[422px] md:w-[330px] gap-[5px] md:gap-[18px] items-center text-center light-box-shadow flex-shrink-0">
+                <h2 class="text-[24px] md:text-4xl font-serif font-normal text-black">This is us</h2>
+                <p class="mt-2 md:mt-4 text-black text-center font-sans text-[13px] md:text-[18px] font-light leading-normal">
                   We create flexible software solutions for managing satellite communications.
                   <br><br>
-                  <span class="text-[17px] font-bold">Our technology replaces traditional hardware,</span>
+                  <span class="md:text-[17px] font-bold">Our technology replaces traditional hardware,</span>
                   making satellite ground operations more adaptable, cost-effective, and reliable for modern space missions.
                 </p>
               </div>
