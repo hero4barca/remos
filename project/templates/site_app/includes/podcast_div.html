@@ -1,9 +1,9 @@
 {% load static %}
 
 <!-- Podcast Section -->
-<div class="flex flex-col md:flex-row items-center justify-between  lg:w-[70%] lgTo1160:w-[90%]">
+<div class="flex flex-col md:flex-row items-center justify-between lg:w-[70%] lgTo1160:w-[90%] gap-8 md:gap-0">
     <!-- Podcast Info -->
-    <div class="bg-[#0C0F22] dark-box-shadow rounded-[81px] lgTo1160:rounded-[68px] p-8 flex-1 md:max-w-[60%] lg:max-w-[45%] lgTo1160:max-w-[50%] ">
+    <div class="bg-[#0C0F22] dark-box-shadow rounded-[81px] lgTo1160:rounded-[68px] p-8 flex-1 md:max-w-[60%] lg:max-w-[45%] lgTo1160:max-w-[50%] order-2 md:order-1">
       <h3 class="text-white text-4xl font-serif mb-4">Podcast</h3>
       <p class="text-white mb-4">
         Listen to our podcast - <span class="font-bold">Space to Ground.</span>
@@ -17,7 +17,7 @@
       </a>
     </div>
     <!-- Podcast Logo -->
-    <div class="flex-shrink-0 ">
-      <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-64 h-auto lg:min-w-[368px]">
+    <div class="flex-shrink-0 flex order-1 md:order-2">
+      <img src="{% static 'img/podcast.png' %}" alt="Space to Ground Logo" class="w-80 md:w-64 h-auto lg:min-w-[368px]">
     </div>
   </div>

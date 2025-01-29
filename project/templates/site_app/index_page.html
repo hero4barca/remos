@@ -391,7 +391,7 @@
           <div class="swiper news-swiper">
             <div class="swiper-wrapper">
               <!-- Card 1 -->
-              <div class="swiper-slide p-9 border-r border-[#2BA9F0] flex flex-col">
+              <div class="swiper-slide p-9 md:border-r border-[#2BA9F0] flex flex-col">
                 <img src="{% static 'img/news-img.png' %}" alt="News 1" class="rounded-[20%] mb-4 max-w-full h-auto">
                 <p class="text-white mt-auto">
                   Join us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -399,7 +399,7 @@
               </div>
 
               <!-- Card 2 -->
-              <div class="swiper-slide p-9 border-r border-[#2BA9F0] flex flex-col">
+              <div class="swiper-slide p-9 md:border-r border-[#2BA9F0] flex flex-col">
                 <img src="{% static 'img/news-img.png' %}" alt="News 2" class="rounded-[20%] mb-4 max-w-full h-auto">
                 <p class="text-white mt-auto">
                   Visit us... lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -407,7 +407,7 @@
               </div>
 
               <!-- Card 3 -->
-              <div class="swiper-slide p-9 border-r border-[#2BA9F0] flex flex-col">
+              <div class="swiper-slide p-9 md:border-r border-[#2BA9F0] flex flex-col">
                 <img src="{% static 'img/news-img.png' %}" alt="News 3" class="rounded-[20%] mb-4 max-w-full h-auto">
                 <p class="text-white mt-auto">
                   Learn more... lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -526,6 +526,12 @@
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
+        480: {
+          slidesPerView: 1.5, // Show 2 slides on medium screens
+        },
+        640: {
+          slidesPerView: 2, // Show 2 slides on medium screens
+        },
         768: {
           slidesPerView: 2, // 2 cards for medium screens (md)
         },
