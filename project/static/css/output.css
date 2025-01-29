@@ -1811,6 +1811,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
 .flex-row {
   flex-direction: row !important;
 }
@@ -3192,6 +3196,18 @@ video {
     border-radius: 81px !important;
   }
 
+  .md\:border-r {
+    border-right-width: 1px !important;
+  }
+
+  .md\:border-r-0 {
+    border-right-width: 0px !important;
+  }
+
+  .md\:border-b-0 {
+    border-bottom-width: 0px !important;
+  }
+
   .md\:p-3 {
     padding: 0.75rem !important;
   }
@@ -3332,6 +3348,10 @@ video {
 
   .md\:font-bold {
     font-weight: 700 !important;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600 !important;
   }
 }
 
