@@ -1355,6 +1355,14 @@ video {
   width: 20rem !important;
 }
 
+.w-36 {
+  width: 9rem !important;
+}
+
+.w-\[100px\] {
+  width: 100px !important;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content !important;
   min-width: fit-content !important;
@@ -1390,6 +1398,10 @@ video {
 
 .max-w-full {
   max-width: 100% !important;
+}
+
+.max-w-\[50\%\] {
+  max-width: 50% !important;
 }
 
 .flex-1 {
@@ -1516,6 +1528,34 @@ video {
 
 .gap-5 {
   gap: 1.25rem !important;
+}
+
+.gap-9 {
+  gap: 2.25rem !important;
+}
+
+.gap-16 {
+  gap: 4rem !important;
+}
+
+.gap-36 {
+  gap: 9rem !important;
+}
+
+.gap-20 {
+  gap: 5rem !important;
+}
+
+.gap-24 {
+  gap: 6rem !important;
+}
+
+.gap-28 {
+  gap: 7rem !important;
+}
+
+.gap-32 {
+  gap: 8rem !important;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2244,6 +2284,14 @@ video {
     width: 95% !important;
   }
 
+  .sm\:flex-col {
+    flex-direction: column !important;
+  }
+
+  .sm\:items-center {
+    align-items: center !important;
+  }
+
   .sm\:text-2xl {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
@@ -2445,6 +2493,22 @@ video {
 
   .md\:mt-8 {
     margin-top: 2rem !important;
+  }
+
+  .md\:mb-1 {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px !important;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem !important;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem !important;
   }
 
   .md\:line-clamp-4 {
@@ -2706,6 +2770,14 @@ video {
     flex-direction: column !important;
   }
 
+  .md\:items-start {
+    align-items: flex-start !important;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start !important;
+  }
+
   .md\:justify-between {
     justify-content: space-between !important;
   }
@@ -2736,6 +2808,10 @@ video {
 
   .md\:gap-0 {
     gap: 0px !important;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem !important;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2920,6 +2996,10 @@ video {
 
   .md\:font-semibold {
     font-weight: 600 !important;
+  }
+
+  .md\:text-inherit {
+    color: inherit !important;
   }
 }
 

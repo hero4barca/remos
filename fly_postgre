@@ -6,3 +6,62 @@ Postgres cluster bold-hill-4593 created
   Proxy port:  5432
   Postgres port:  5433
   Connection string: postgres://postgres:tj0jw8KRwpiZCt3@bold-hill-4593.flycast:5432
+
+
+<footer class="bg-[#0C0F22] py-8 text-white border-t border-[#2BA9F0]">
+    <div class="max-w-[95%] mx-auto px-6">
+      <!-- Top Row -->
+      <div class="flex flex-col md:flex-row justify-between items-start border-b border-[#2BA9F0] pb-6 mb-6 gap-8">
+        <!-- Left Section -->
+        <div class="flex gap-12 md:gap-6">
+          <!-- Contact Section -->
+          <div class="flex flex-col min-w-fit">
+            <h2 class="text-[24px] md:text-5xl font-serif font-light  md:mb-4">Contact</h2>
+            <p class=" text-[12px] md:text-inherit md:mb-1">Telephone: +46 703 497 011</p>
+            <p class="text-[12px] md:text-inherit md:mb-4">Email: info@remospace.com</p>
+          </div>
+
+          <!-- Follow Us Section -->
+          <div class="flex flex-col min-w-fit mt-5">
+            <h2 class="md:text-xl font-serif font-light mb-4">Follow Us</h2>
+            <div class="flex items-center gap-4">
+
+              <!-- Social Media Icons -->
+              <a href="#" class="hover:text-blue-500">
+                <img src="{% static 'img/icons/linkedin.png' %}" alt="LinkedIn" class="w-9 h-9">
+              </a>
+              <a href="#" class="hover:text-blue-500">
+                <img src="{% static 'img/icons/mailchimp.png' %}" alt="Custom Icon" class="w-9 h-9">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex flex-col items-start text-left">
+          <img src="{% static 'img/logo-white.png' %}" alt="Remos Logo" class="mb-4 md:w-[140px] h-auto">
+          <p class="text-sm text-white font-light">
+            <span class="font-semibold">Simplifying Satellite Ground Operations.</span><br>
+            Welcome to the next generation <br /> of space communications.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Bottom Row -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Company Address -->
+        <div class="text-sm text-white font-light ml-4">
+          <p class="font-bold">Company Address</p>
+          <p>Remos Space Systems AB</p>
+          <p>Aurorum 1 C, SE-977 75 Luleå, Sweden</p>
+        </div>
+
+        <!-- EU Logo -->
+        <div class="mt-6 lg:mt-0 lg:mr-14">
+          <img src="{% static 'img/cass_eu.png' %}" alt="Cassini Accelerator Logo" class=" lg:w-48 h-auto">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
